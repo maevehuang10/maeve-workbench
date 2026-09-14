@@ -1,0 +1,303 @@
+{
+  "updatedAt": "2026-09-11T09:35:33.008Z",
+  "name": "Maeve",
+  "products": [
+    {
+      "name": "WB2系列",
+      "category": "通信类",
+      "family": "Wi-Fi系列",
+      "url": "https://docs.ai-thinker.com/en/wb2/index.html"
+    },
+    {
+      "name": "M61系列",
+      "category": "通信类",
+      "family": "Wi-Fi系列",
+      "url": "https://docs.ai-thinker.com/en/ai_m61/index.html"
+    },
+    {
+      "name": "M62系列",
+      "category": "通信类",
+      "family": "Wi-Fi系列",
+      "url": "https://docs.ai-thinker.com/en/ai_m62/index.html"
+    },
+    {
+      "name": "M64系列",
+      "category": "通信类",
+      "family": "Wi-Fi系列",
+      "url": "https://docs.ai-thinker.com/en/ai_m64/index.html"
+    },
+    {
+      "name": "BW系列",
+      "category": "通信类",
+      "family": "Wi-Fi系列",
+      "url": "https://docs.ai-thinker.com/en/rtl87xx/index.html"
+    },
+    {
+      "name": "LoRa系列",
+      "category": "通信类",
+      "family": "LoRa系列",
+      "url": "https://docs.ai-thinker.com/en/lora/index.html"
+    },
+    {
+      "name": "LoRaWAN系列",
+      "category": "通信类",
+      "family": "LoRa系列",
+      "url": "https://docs.ai-thinker.com/en/lorawan/index.html"
+    },
+    {
+      "name": "LoRaWAN网关系列",
+      "category": "通信类",
+      "family": "LoRa系列",
+      "url": "https://docs.ai-thinker.com/en/loraGateway/index.html"
+    },
+    {
+      "name": "PB系列",
+      "category": "通信类",
+      "family": "蓝牙系列",
+      "url": "https://docs.ai-thinker.com/en/blue_tooth_pb/index.html"
+    },
+    {
+      "name": "TB系列",
+      "category": "通信类",
+      "family": "蓝牙系列",
+      "url": "https://docs.ai-thinker.com/en/blue_tooth/index.html"
+    },
+    {
+      "name": "VC系列",
+      "category": "通信类",
+      "family": "离线语音系列",
+      "url": "https://docs.ai-thinker.com/en/vc/index.html"
+    },
+    {
+      "name": "BU",
+      "category": "通信类",
+      "family": "UWB系列",
+      "url": "https://docs.ai-thinker.com/en/uwb_1/index.html"
+    },
+    {
+      "name": "GP",
+      "category": "通信类",
+      "family": "GPS系列",
+      "url": "https://docs.ai-thinker.com/en/gps_1/index.html"
+    },
+    {
+      "name": "SG系列",
+      "category": "通信类",
+      "family": "RF433系列",
+      "url": "https://docs.ai-thinker.com/en/si4432/index.html"
+    },
+    {
+      "name": "01系列",
+      "category": "传感类",
+      "family": "雷达系列",
+      "url": "https://docs.ai-thinker.com/en/rd-01/index.html"
+    },
+    {
+      "name": "03系列",
+      "category": "传感类",
+      "family": "雷达系列",
+      "url": "https://docs.ai-thinker.com/en/rd-03/index.html"
+    },
+    {
+      "name": "04系列",
+      "category": "传感类",
+      "family": "雷达系列",
+      "url": "https://docs.ai-thinker.com/en/rd-04/index.html"
+    },
+    {
+      "name": "6X系列",
+      "category": "传感类",
+      "family": "雷达系列",
+      "url": "https://docs.ai-thinker.com/en/rd-6x/index.html"
+    },
+    {
+      "name": "100系列",
+      "category": "传感类",
+      "family": "雷达系列",
+      "url": "https://docs.ai-thinker.com/en/rd-100/index.html"
+    },
+    {
+      "name": "BV系列",
+      "category": "AI类",
+      "family": "AI系列",
+      "url": "https://docs.ai-thinker.com/en/ai-bv01/index.html"
+    },
+    {
+      "name": "PalChat系列",
+      "category": "AI类",
+      "family": "AI系列",
+      "url": "https://docs.ai-thinker.com/en/aipi-palchatv1/index.html"
+    },
+    {
+      "name": "WV系列",
+      "category": "AI类",
+      "family": "AI系列",
+      "url": "https://docs.ai-thinker.com/en/ai-wv01/index.html"
+    },
+    {
+      "name": "九章验证板",
+      "category": "AI类",
+      "family": "AI系列",
+      "url": "https://docs.ai-thinker.com/en/9mod-mcpboard/index.html"
+    },
+    {
+      "name": "LoRaWAN解决方案",
+      "category": "成品类",
+      "family": "LoRaWAN解决方案",
+      "url": "https://docs.ai-thinker.com/en/lorawan_solution/"
+    }
+  ],
+  "skills": [
+    {
+      "name": "aihot",
+      "category": "选题与策划"
+    },
+    {
+      "name": "b2b-anti-ai-slop-writing",
+      "category": "文案与字幕"
+    },
+    {
+      "name": "cn-video-subtitle-localizer",
+      "category": "文案与字幕"
+    },
+    {
+      "name": "competitor-content-deconstructor",
+      "category": "选题与策划"
+    },
+    {
+      "name": "content-asset-archiver",
+      "category": "素材与选题管理"
+    },
+    {
+      "name": "content-risk-detector",
+      "category": "产品与发布检查"
+    },
+    {
+      "name": "facebook-ad-baseline-tracker",
+      "category": "数据与复盘"
+    },
+    {
+      "name": "feishu-topic-library",
+      "category": "素材与选题管理"
+    },
+    {
+      "name": "gpt-image2",
+      "category": "视觉与视频"
+    },
+    {
+      "name": "gzh-design",
+      "category": "视觉与视频"
+    },
+    {
+      "name": "manus-short-video-rewriter",
+      "category": "视觉与视频"
+    },
+    {
+      "name": "monthly-social-reviewer",
+      "category": "数据与复盘"
+    },
+    {
+      "name": "multi-platform-content-repurposer",
+      "category": "文案与字幕"
+    },
+    {
+      "name": "poster-copy-polish",
+      "category": "文案与字幕"
+    },
+    {
+      "name": "product-claim-checklist",
+      "category": "产品与发布检查"
+    },
+    {
+      "name": "product-spec-extractor",
+      "category": "产品与发布检查"
+    },
+    {
+      "name": "product-topic-generator",
+      "category": "选题与策划"
+    },
+    {
+      "name": "social-comment-reply-assistant",
+      "category": "互动与线索"
+    },
+    {
+      "name": "social-data-analysis-formatter",
+      "category": "数据与复盘"
+    },
+    {
+      "name": "social-lead-intent-tracker",
+      "category": "互动与线索"
+    },
+    {
+      "name": "social-performance-reviewer",
+      "category": "数据与复盘"
+    },
+    {
+      "name": "social-publish-qc",
+      "category": "产品与发布检查"
+    },
+    {
+      "name": "video-spec-builder",
+      "category": "视觉与视频"
+    },
+    {
+      "name": "wechat-writing-style",
+      "category": "文案与字幕"
+    },
+    {
+      "name": "weekly-content-planner",
+      "category": "选题与策划"
+    }
+  ],
+  "topics": [
+    {
+      "title": "九章MCP验证板｜AI 控制硬件视频",
+      "product": "九章MCP验证板",
+      "platform": "YouTube",
+      "url": "https://www.youtube.com/shorts/EBVq1CIf5Bc"
+    },
+    {
+      "title": "Ai-M64P-32S｜产品短视频",
+      "product": "Ai-M64P-32S",
+      "platform": "YouTube",
+      "url": "https://www.youtube.com/shorts/hve8rLlLa7g"
+    }
+  ],
+  "websites": [
+    {
+      "name": "LinkedIn",
+      "category": "平台",
+      "url": "https://www.linkedin.com/"
+    },
+    {
+      "name": "Facebook",
+      "category": "平台",
+      "url": "https://www.facebook.com/aithinkersales"
+    },
+    {
+      "name": "YouTube",
+      "category": "平台",
+      "url": "https://www.youtube.com/@ai-thinker./shorts"
+    },
+    {
+      "name": "TikTok",
+      "category": "平台",
+      "url": "https://www.tiktok.com/@aithinker"
+    },
+    {
+      "name": "ChatGPT",
+      "category": "工具",
+      "url": "https://chatgpt.com/"
+    },
+    {
+      "name": "Gmail",
+      "category": "工具",
+      "url": "https://mail.google.com/mail/u/0/#inbox"
+    },
+    {
+      "name": "飞书",
+      "category": "工具",
+      "url": "https://www.feishu.cn/"
+    }
+  ]
+}
