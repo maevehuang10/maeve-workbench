@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-11T09:35:33.008Z",
+  "updatedAt": "2026-09-17T05:43:44.464Z",
   "name": "Maeve",
   "products": [
     {
@@ -143,8 +143,26 @@
     {
       "name": "LoRaWAN解决方案",
       "category": "成品类",
-      "family": "LoRaWAN解决方案",
+      "family": "解决方案",
       "url": "https://docs.ai-thinker.com/en/lorawan_solution/"
+    },
+    {
+      "name": "4G远程方案",
+      "category": "成品类",
+      "family": "解决方案",
+      "url": "https://docs.ai-thinker.com/en/open_cloud/solutions/4g-remote.html"
+    },
+    {
+      "name": "LoRaWAN方案",
+      "category": "成品类",
+      "family": "解决方案",
+      "url": "https://docs.ai-thinker.com/en/open_cloud/solutions/lorawan.html"
+    },
+    {
+      "name": "UWB方案",
+      "category": "成品类",
+      "family": "解决方案",
+      "url": "https://docs.ai-thinker.com/en/open_cloud/solutions/uwb.html"
     }
   ],
   "skills": [
