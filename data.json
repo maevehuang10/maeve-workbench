@@ -1,253 +1,365 @@
 {
   "terms": [
     {
+      "category": "00 读懂产品命名",
+      "name": "Ai- 前缀｜安信可品牌标识",
+      "definition": "安信可产品名里常见的 “Ai-” 前缀，是品牌标识，读作 “A-I”。看型号时重点是后面的系列号，不是这个前缀。",
+      "example": "Ai-WB2、Ai-M61、Ai-WV01，去掉 “Ai-” 后才是系列名。",
+      "caution": "官方文档带 “Ai-”，资料库里有时简写成 “WB2”“M61”，指的是同一个系列，别当成两种产品。",
+      "reference": "docs.ai-thinker.com 各系列页面标题。"
+    },
+    {
+      "category": "00 读懂产品命名",
+      "name": "Ai-WB2 系列｜Wi-Fi + BLE 双模",
+      "definition": "同时支持 Wi-Fi 和低功耗蓝牙（BLE）的模组系列：一颗模组既能联网，又能和手机近场连接。",
+      "example": "既要 Wi-Fi 联网、又要手机蓝牙配网的设备，可以优先看它。",
+      "caution": "官方名 “Ai-WB2”，资料库常简写 “WB2”；它是 Wi-Fi+BLE 双模，不是纯蓝牙。",
+      "reference": "Wi-Fi 产品页 → WB2 系列。"
+    },
+    {
+      "category": "00 读懂产品命名",
+      "name": "Ai-M61 / Ai-M62 / Ai-M64 系列｜Wi-Fi 6",
+      "definition": "三款 Wi-Fi 6 模组系列，属于新一代 Wi-Fi，更快、更省电。M62 还带 Thread，M64 引脚更多（GPIO 37 个）。",
+      "example": "视频传输、多设备并发这类对速度和稳定性要求高的场景。",
+      "caution": "三个都叫 “Ai-M6x”，下单要看清尾数 61/62/64，蓝牙版本和引脚数量不一样。",
+      "reference": "Wi-Fi 产品页 → Ai-M61 / Ai-M62 / Ai-M64 子页。"
+    },
+    {
+      "category": "00 读懂产品命名",
+      "name": "BW 系列｜双频 Wi-Fi + BLE5.4",
+      "definition": "支持 2.4G 和 5G 两个频段的双频 Wi-Fi 模组，还带 BLE5.4。",
+      "example": "既要抗干扰、又要走 5G 频段的室内设备。",
+      "caution": "BW 是双频（2.4G+5G），别和单频的 Ai-WB2 混；BW 前面不带 “Ai-”。",
+      "reference": "Wi-Fi 产品页 → RTL87xx（BW）系列。"
+    },
+    {
+      "category": "00 读懂产品命名",
+      "name": "PB 系列｜PHYPLUS 蓝牙",
+      "definition": "基于奉加微（PHYPLUS）芯片的 BLE 蓝牙模组。PB = PHYPLUS Bluetooth。",
+      "example": "需要低功耗蓝牙的传感器、穿戴类、手机近场交互。",
+      "caution": "PB 是蓝牙，不是 Wi-Fi；它和 TB 同属蓝牙，但芯片厂不同（奉加微 vs 泰凌微）。",
+      "reference": "蓝牙产品页 → PB 系列。"
+    },
+    {
+      "category": "00 读懂产品命名",
+      "name": "TB 系列｜TELINK 蓝牙",
+      "definition": "基于泰凌微（TELINK）芯片的 BLE 蓝牙模组。TB = TELINK Bluetooth。",
+      "example": "手机配网、近场数据交互、低功耗传感。",
+      "caution": "TB 也是蓝牙；选 PB 还是 TB 主要看芯片生态和成本，别只看名字。",
+      "reference": "蓝牙产品页 → TB 系列。"
+    },
+    {
+      "category": "00 读懂产品命名",
+      "name": "VC 系列｜离线语音",
+      "definition": "不需要联网、在本地就能听懂唤醒词和指令的语音模组，还能自助学习唤醒词、免重新编译固件。",
+      "example": "智能开关、小家电的离线语音控制。",
+      "caution": "VC 是“离线”语音，本地识别，不依赖云端；和在线语音助手不是一回事。",
+      "reference": "Offline Voice 产品页 → VC 系列。"
+    },
+    {
+      "category": "00 读懂产品命名",
+      "name": "BU 系列｜UWB 定位",
+      "definition": "基于 UWB（超宽带）的定位模组，精度约 10 厘米，内置 MCU、易集成。",
+      "example": "室内高精度定位、测距。",
+      "caution": "BU 是 UWB 定位，不是蓝牙，别和 PB/TB（蓝牙）搞混。",
+      "reference": "UWB 产品页 → BU 系列。"
+    },
+    {
+      "category": "00 读懂产品命名",
+      "name": "GP 系列｜GNSS 定位",
+      "definition": "接收 GPS/BDS/GLONASS 卫星信号做定位的模组，精度约 1 米。",
+      "example": "户外资产追踪、车辆定位。",
+      "caution": "GP 只负责“算出位置”；把位置传出去还要靠别的通信链路（Wi-Fi/蜂窝/LoRa）。",
+      "reference": "GNSS 产品页 → GP 系列。"
+    },
+    {
+      "category": "00 读懂产品命名",
+      "name": "SG 系列｜Si4432 Sub-GHz 射频",
+      "definition": "基于 Silicon Labs Si4432 芯片的 Sub-GHz（1GHz 以下）射频模组，常用于 433MHz 这类低频无线通信。",
+      "example": "RF433 遥控、低速率远传。",
+      "caution": "SG 是 Sub-GHz 射频（433 类），不是 4G，也不是 Wi-Fi，别被名字带偏。",
+      "reference": "产品页 → Si4432（RF433）系列。"
+    },
+    {
+      "category": "00 读懂产品命名",
+      "name": "Ra 系列｜LoRa 模组",
+      "definition": "安信可 LoRa 模组统一以 “Ra-” 开头（Ra-01、Ra-02、Ra-11、Ra-20…），用于远距离、低速率的小数据上报。",
+      "example": "农田、园区里分散传感器的低功耗远传。",
+      "caution": "Ra 是 LoRa（点对点/物理层）；要组网（LoRaWAN）还得看具体型号是否带协议栈。",
+      "reference": "LoRa 产品页，型号从 Ra-01 到 Ra-20。"
+    },
+    {
+      "category": "00 读懂产品命名",
+      "name": "Rd 系列｜毫米波雷达",
+      "definition": "安信可雷达模组以 “Rd-” 开头，注意是小写 d（Rd-01 / Rd-03 / Rd-04 / Rd-6X / Rd-100），靠毫米波感知有没有人、动没动、距离方向。",
+      "example": "Rd-03 检测“有没有人”，Rd-03D 还能判方向距离；Rd-6X 是 60GHz。",
+      "caution": "写法是 “Rd-03” 不是 “RD-03”；不同型号频段不同——Rd-01/03/100 是 24GHz，Rd-04 是 10GHz，Rd-6X 是 60GHz。",
+      "reference": "Radar 产品页。"
+    },
+    {
+      "category": "00 读懂产品命名",
+      "name": "频段数字｜2.4G / 5G / Sub-GHz / 24GHz / 60GHz",
+      "definition": "这些数字说的是无线电“频率”，单位 GHz（十亿赫兹）。频率越低越能穿墙、传得远，但传得慢；越高带宽越大。Sub-GHz 指 1GHz 以下。",
+      "example": "Wi-Fi 用 2.4G/5G；LoRa 常用 433/470/868/915MHz（Sub-GHz）；雷达用 10/24/60GHz。",
+      "caution": "同一个 “5G”，指 Wi-Fi 的 5GHz 频段，和手机 “5G 网络”（第五代蜂窝通信）是两码事，别混。",
+      "reference": "各规格书“频段”栏。"
+    },
+    {
+      "category": "00 读懂产品命名",
+      "name": "网关 / 方案 / 验证板｜系统级产品",
+      "definition": "产品库里还有几类不是“单颗模组”：网关（汇聚转发）、方案（模组+平台+部署的组合）、验证板（测试用）。名字带这些词，说明是“系统级”，不是单颗模组。",
+      "example": "LoRaWAN 网关系列、LoRaWAN 方案、九章验证板。",
+      "caution": "方案/网关 ≠ 模组；下单前分清你要的是“一颗模组”还是“一套能跑的系统”。",
+      "reference": "各成品/方案页面。"
+    },
+    {
       "category": "01 认识设备组成",
       "name": "IoT｜物联网",
-      "definition": "把物理设备连接起来，让设备数据能被读取、交换或用于控制。像给设备接上“信息通道”。",
-      "example": "温湿度传感器采集数据，经通信链路送到平台，用户查看环境状态。",
-      "caution": "有传感器不等于已经联网；完整方案还涉及软件、网络和供电。",
-      "reference": "产品系统框图、方案说明：查数据从哪里来、经过哪里、到哪里去。"
+      "definition": "一句话：让东西自己会看、会想、会说话，需要时还会动手。把设备连起来，让数据能被读取、交换或控制。",
+      "example": "温室传感器测温度，经网络送到平台，你在手机上看曲线、收告警。",
+      "caution": "有传感器不等于已经联网；一套能用的方案，还得配上软件、网络和供电。",
+      "reference": "产品系统框图、方案说明：查数据从哪来、经过哪、到哪去。"
     },
     {
       "category": "01 认识设备组成",
       "name": "芯片 / SoC",
-      "definition": "芯片是实现电子功能的核心器件；SoC（片上系统）把处理器及多种功能集成在一颗芯片内，像把多个工作部门放进同一栋楼。",
-      "example": "开发者选择带无线功能的 SoC，再设计自己的电路。",
-      "caution": "不是所有芯片都是 SoC；芯片也不等于可以直接使用的成品。",
-      "reference": "芯片数据手册：看功能框图、外设与支持的协议。"
+      "definition": "芯片是设备的“大脑”；SoC 是把处理器和多种功能塞进一颗芯片里，像把好几个部门装进同一栋楼。",
+      "example": "开发者挑一颗带无线功能的 SoC，再设计自己的电路。",
+      "caution": "不是所有芯片都叫 SoC；芯片也不是拿来就能用的成品。",
+      "reference": "芯片数据手册：看功能框图、外设和协议。"
     },
     {
       "category": "01 认识设备组成",
       "name": "模组｜Module",
-      "definition": "把芯片和必要的外围电路集成到一块小板上，提供相对完整的功能，像可装入产品的“功能组件”。",
-      "example": "设备厂把无线模组集成到智能插座中。",
-      "caution": "模组仍需供电、连接和软件集成；不能默认自带天线或已完成终端认证。",
-      "reference": "具体型号规格书、参考设计、引脚表与认证文件。"
+      "definition": "把芯片和必要外围电路打包到一块小板上，做成“插上就能用”的功能组件，像装好发动机、接好线的引擎总成。",
+      "example": "设备厂把安信可无线模组（如 Ra、Ai-WB2）装进自己的产品。",
+      "caution": "模组 ≠ 成品：供电、接线、程序、天线安排，仍是客户的事。",
+      "reference": "具体型号规格书、参考设计、引脚表、认证文件。"
     },
     {
       "category": "01 认识设备组成",
       "name": "开发板｜Development Board",
-      "definition": "为测试和开发准备的电路板，通常把供电、下载和接口引出，像方便试装的实验台。",
-      "example": "用 USB 给板子供电、下载程序，验证传感器数据能否传出。",
-      "caution": "开发板方便验证，但通常不等于量产终端；板上额外电路也会耗电。",
+      "definition": "专门用来测试和开发的板子，把供电、下载、接口都引出来，像方便试装的实验台。",
+      "example": "用 USB 给开发板供电、下载程序，先验证传感器数据能不能传出来。",
+      "caution": "开发板适合验证，不等于能量产；板上多出来的电路也会耗电。",
       "reference": "开发板使用指南、原理图、快速入门示例。"
     },
     {
       "category": "01 认识设备组成",
       "name": "终端设备｜End Device",
-      "definition": "面向具体用途的完整设备，把电路、软件、供电和结构整合起来。",
+      "definition": "面向具体用途的完整设备，把电路、软件、供电和外壳都整合起来，是最终能卖给用户的东西。",
       "example": "智能门锁、联网水表、环境监测器。",
-      "caution": "模组的一项能力不能直接等同于终端整体性能。",
-      "reference": "终端说明书、系统方案与实际测试条件。"
+      "caution": "模组的一项能力，不能直接等于整台终端的性能。",
+      "reference": "终端说明书、系统方案、实际测试条件。"
     },
     {
       "category": "01 认识设备组成",
       "name": "PCB｜印制电路板",
-      "definition": "承载元器件并用导电线路连接它们的板子，像电路的道路和地基。",
-      "example": "芯片、模组和连接器焊接在 PCB 上。",
+      "definition": "承载元器件、用线路把它们连起来的板子，像电路的道路和地基。",
+      "example": "芯片、模组、连接器都焊在 PCB 上。",
       "caution": "PCB 是载体，不是芯片；板上有无线器件，也不代表射频设计已经合格。",
       "reference": "原理图、PCB 布局图、硬件设计指南。"
     },
     {
       "category": "02 选择通信方式",
       "name": "Wi-Fi",
-      "definition": "常见的无线局域网技术，像设备连接现场路由器的一条通道。",
-      "example": "家电接入家庭网络，上传状态或接收控制指令。",
-      "caution": "连上 Wi-Fi 不等于连上互联网；频段、版本和功耗要看具体型号。",
-      "reference": "模组规格书的 Wi-Fi 协议与频段、联网例程。"
+      "definition": "最常见的无线局域网技术，像设备连现场路由器的一条通道。",
+      "example": "家电接进家庭网络，上传状态、接收控制指令。",
+      "caution": "连上 Wi-Fi 不等于连上互联网；频段、版本、功耗要看具体型号。",
+      "reference": "模组规格书的 Wi-Fi 协议、频段、联网例程。"
     },
     {
       "category": "02 选择通信方式",
       "name": "Bluetooth / BLE｜蓝牙 / 低功耗蓝牙",
-      "definition": "Bluetooth 是技术家族；BLE（Bluetooth Low Energy）是其中面向低功耗应用的技术。像手机和周边设备之间的无线通道。",
-      "example": "传感器向手机传数据，或通过手机给设备配置网络。",
-      "caution": "经典蓝牙与 BLE 的支持情况要分别确认；标注蓝牙不能推断所有功能都支持。",
-      "reference": "Bluetooth SIG 技术概览、产品协议版本和支持的功能。"
+      "definition": "Bluetooth 是蓝牙技术家族；BLE（低功耗蓝牙）是里面专为省电设计的那一支。像手机和周边设备之间的无线通道。",
+      "example": "传感器向手机传数据，或手机给设备配网。",
+      "caution": "经典蓝牙和 BLE 的支持情况要分开看；说“支持蓝牙”不等于所有功能都支持。",
+      "reference": "Bluetooth SIG 技术概览、产品协议版本。"
     },
     {
       "category": "02 选择通信方式",
       "name": "LoRa",
-      "definition": "一种无线调制技术，适合远距离、低速率的数据传输，像传少量消息的远距离对讲方式。",
-      "example": "农田传感器周期性发送少量温湿度数据。",
-      "caution": "LoRa 不等于 LoRaWAN，也不自带互联网连接；距离受环境与配置影响。",
-      "reference": "芯片 / 模组规格书：频段、速率、链路测试条件。"
+      "definition": "一种无线调制技术，擅长远距离、低速率传少量数据，像给远方发“短电报”。",
+      "example": "农田传感器周期性上报少量温湿度。",
+      "caution": "LoRa 不等于 LoRaWAN，也不自带联网；距离受环境和配置影响。",
+      "reference": "芯片/模组规格书：频段、速率、链路测试条件。"
     },
     {
       "category": "02 选择通信方式",
       "name": "LoRaWAN",
-      "definition": "建立在 LoRa 等物理层能力之上的低功耗广域网络协议，规定设备接入、通信和安全等规则。",
+      "definition": "建立在 LoRa 之上的低功耗广域组网协议，规定设备怎么接入、通信、加密。",
       "example": "多个表计通过网关和网络服务器上报数据。",
-      "caution": "有 LoRa 射频能力不代表已支持 LoRaWAN；还需协议栈和配套网络。",
-      "reference": "LoRa Alliance 开发者资料、区域参数及模组协议栈文档。"
+      "caution": "有 LoRa 射频能力，不代表已支持 LoRaWAN；还要协议栈和配套网络。",
+      "reference": "LoRa Alliance 资料、区域参数、模组协议栈文档。"
     },
     {
       "category": "02 选择通信方式",
       "name": "4G / 蜂窝通信",
-      "definition": "通过移动运营商基站联网；4G 是蜂窝通信的一代，像设备自己拥有移动网络入口。",
-      "example": "没有现场 Wi-Fi 的远程监测设备经移动网络传数据。",
-      "caution": "要核对覆盖、运营商频段、SIM / eSIM、资费和供电；不同蜂窝类别能力不同。",
-      "reference": "模组网络制式、频段表、运营商要求和硬件设计指南。"
+      "definition": "通过运营商基站联网；4G 是其中一代，像设备自带一个移动网络入口。",
+      "example": "没有现场 Wi-Fi 的远程监测设备，走移动网络传数据。",
+      "caution": "要核对覆盖、频段、SIM/eSIM、资费、供电；不同蜂窝类别能力不同。",
+      "reference": "模组网络制式、频段表、运营商要求、硬件设计指南。"
     },
     {
       "category": "02 选择通信方式",
       "name": "NFC｜近场通信",
-      "definition": "适合很近距离交互的无线技术，可理解为“贴近后交换信息”。",
-      "example": "手机读取设备标签，或帮助完成配对引导。",
-      "caution": "不是远距离联网方案；能否读写、供电方式与手机兼容性取决于设备和模式。",
-      "reference": "NFC 芯片 / 标签规格、支持模式及应用说明。"
+      "definition": "适合“贴很近”才交互的无线技术，可以理解成“贴近后交换信息”。",
+      "example": "手机读设备标签，或帮设备完成配对引导。",
+      "caution": "不是远距离联网方案；能否读写、供电方式、手机兼容性取决于设备和模式。",
+      "reference": "NFC 芯片/标签规格、支持模式、应用说明。"
     },
     {
       "category": "03 区分感知与定位",
       "name": "传感器｜Sensor",
-      "definition": "把温度、光照、运动等物理量转成可处理的信号，像设备的感官。",
-      "example": "温度传感器测温，再交给控制器判断是否需要调节。",
-      "caution": "传感器负责检测；执行开关、调速等动作通常还需要控制器和执行器。",
-      "reference": "传感器规格书：量程、精度、接口和使用条件。"
+      "definition": "把温度、光照、运动等物理量转成信号，像设备的眼睛和鼻子。",
+      "example": "温度传感器测温，交给控制器判断要不要调节。",
+      "caution": "传感器只负责“感受”；开关、调速等动作还要控制器和执行器。",
+      "reference": "传感器规格书：量程、精度、接口、使用条件。"
     },
     {
       "category": "03 区分感知与定位",
       "name": "UWB｜超宽带",
-      "definition": "利用很宽频带的无线技术，可用于测距、定位和数据通信，像给设备配备测距工具。",
-      "example": "标签与基站配合做室内资产定位。",
-      "caution": "测距不等于完整定位系统；精度受遮挡、布点、算法和环境影响。",
-      "reference": "UWB 方案架构、测距 / 定位说明与实测条件。"
+      "definition": "用很宽频带做测距、定位和通信的技术，像给设备配一把“测距尺”。",
+      "example": "标签与基站配合做室内资产定位（安信可 BU 系列）。",
+      "caution": "测距不等于完整定位系统；精度受遮挡、布点、算法、环境影响。",
+      "reference": "UWB 方案架构、测距/定位说明、实测条件。"
     },
     {
       "category": "03 区分感知与定位",
       "name": "毫米波雷达",
-      "definition": "发射毫米波并分析反射信号，用于感知目标的距离、运动或存在等信息，像分析回声的感知器。",
-      "example": "房间存在检测，再把检测结果交给灯光控制系统。",
-      "caution": "不是摄像头，也不是联网协议；可检测能力取决于型号和算法，不能泛化为识别人或直接控制灯。",
-      "reference": "雷达模组说明书：安装方式、检测区域、输出协议和限制。"
+      "definition": "发射毫米波、分析回波来感知目标距离、运动或存在，像“发信号听回声”的感知器。",
+      "example": "Rd-03 检测房间有没有人，把结果交给灯控系统。",
+      "caution": "它不是摄像头，也不是联网协议；能检测什么取决于型号和算法，别夸大成“识别人”或“直接控灯”。",
+      "reference": "雷达模组说明书：安装方式、检测区域、输出协议、限制。"
     },
     {
       "category": "04 理解设备怎样组网",
       "name": "节点｜Node",
-      "definition": "网络中的一个参与设备；在传感网络中常指负责采集或上报的设备，像一个信息采集站。",
-      "example": "一块安装在温室内的无线温湿度采集器。",
-      "caution": "节点是系统角色，不是一种固定硬件；并非所有节点都直接连接互联网。",
-      "reference": "系统拓扑、节点协议、供电与数据上报流程。"
+      "definition": "网络里一个参与工作的设备；传感网络里常指负责采集或上报的那一个，像一个信息采集站。",
+      "example": "一块装在温室里的无线温湿度采集器。",
+      "caution": "节点是“角色”不是“一种硬件”；不是所有节点都直接连互联网。",
+      "reference": "系统拓扑、节点协议、供电、数据上报流程。"
     },
     {
       "category": "04 理解设备怎样组网",
       "name": "网关｜Gateway",
-      "definition": "连接不同网络或协议的设备，常承担汇聚、转发或协议转换，像信息中转站。",
-      "example": "LoRaWAN 网关通过 IP 网络把无线数据转发给网络服务器。",
+      "definition": "连接不同网络或协议的设备，负责汇聚、转发或协议转换，像信息中转站。",
+      "example": "LoRaWAN 网关把无线数据经 IP 网络转发给服务器。",
       "caution": "网关不是云平台；也不是所有 IoT 设备都必须经过独立网关。",
-      "reference": "网关接口、支持协议、回传网络和部署指南。"
+      "reference": "网关接口、支持协议、回传网络、部署指南。"
     },
     {
       "category": "05 认识板上的接口",
       "name": "UART｜异步串口",
       "definition": "常见的串行通信接口，双方按约定速度收发数据，像两端约好节奏的对话。",
-      "example": "主控通过串口读取模组数据或发送 AT 指令。",
+      "example": "主控通过串口读模组数据、发 AT 指令。",
       "caution": "UART 是接口，AT 是命令方式；还要匹配电平、波特率和接线。",
-      "reference": "引脚表、串口电平、通信协议或 AT 指令手册。"
+      "reference": "引脚表、串口电平、通信协议、AT 指令手册。"
     },
     {
       "category": "05 认识板上的接口",
       "name": "GPIO｜通用输入输出",
-      "definition": "可配置为输入或输出的通用数字引脚，像可分配职责的信号开关。",
-      "example": "读取按键状态，或向外部电路输出控制信号。",
-      "caution": "引脚不一定能直接驱动灯、继电器或电机；需核对电压、电流及驱动电路。",
+      "definition": "可以配置成输入或输出的通用数字引脚，像可随时分配职责的信号开关。",
+      "example": "读按键状态，或向外部电路输出控制信号。",
+      "caution": "引脚不一定能直接驱动灯、继电器、电机；要核对电压、电流和驱动电路。",
       "reference": "引脚定义、电气特性、参考电路。"
     },
     {
       "category": "05 认识板上的接口",
       "name": "SPI｜串行外设接口",
-      "definition": "带时钟的串行接口，常用于主控与外设之间传数据，像按统一节拍传递信息。",
+      "definition": "带时钟的串行接口，常用于主控和外设之间快速传数据，像按统一节拍传递信息。",
       "example": "主控连接显示屏、Flash 存储或无线芯片。",
-      "caution": "SPI 不等于无线协议；接线、时序和工作模式要与外设一致。",
+      "caution": "SPI 不是无线协议；接线、时序、工作模式要和外设一致。",
       "reference": "芯片接口说明、引脚表、SPI 驱动示例。"
     },
     {
       "category": "05 认识板上的接口",
       "name": "I2C / I²C｜双线接口",
-      "definition": "通常用时钟线和数据线连接多个带地址的器件，像一条按门牌号找设备的共享通道。",
-      "example": "主控读取温湿度传感器的数据。",
-      "caution": "共享总线不等于能无限加设备；地址冲突、上拉和电平都要确认。",
-      "reference": "传感器地址、接口时序、原理图及驱动示例。"
+      "definition": "用时钟线和数据线连接多个带地址的器件，像一条按门牌号找设备的共享通道。",
+      "example": "主控读温湿度传感器的数据。",
+      "caution": "共享总线不等于能无限加设备；地址冲突、上拉、电平都要确认。",
+      "reference": "传感器地址、接口时序、原理图、驱动示例。"
     },
     {
       "category": "06 看懂参数与软件资料",
       "name": "射频 / RF｜Radio Frequency",
-      "definition": "与无线电信号的产生、发送、接收有关的技术部分，像无线通信的“收发通道”。",
+      "definition": "和无线电信号的产生、发送、接收有关的部分，像无线通信的“收发通道”。",
       "example": "无线模组通过射频电路和天线发出信号。",
-      "caution": "RF 不是一种通信协议；同频也不代表设备能够互通。",
-      "reference": "硬件设计指南中的射频布局、匹配电路和测试说明。"
+      "caution": "RF 不是一种通信协议；同频也不代表设备能互通。",
+      "reference": "硬件设计指南里的射频布局、匹配电路、测试说明。"
     },
     {
       "category": "06 看懂参数与软件资料",
       "name": "频段｜Frequency Band",
-      "definition": "无线信号使用的频率范围，像不同的无线道路。",
-      "example": "给不同目标市场选择支持相应频段的模组。",
-      "caution": "同频段不等于同协议；市场可用频段及限制应核对当地规则，不能仅看型号名称。",
-      "reference": "规格书频段表、区域参数和目标地区的最新无线电要求。"
+      "definition": "无线信号用的频率范围，像不同的“无线道路”。",
+      "example": "给不同目标市场选支持相应频段的模组。",
+      "caution": "同频段不等于同协议；当地可用频段和限制要查清楚，不能只看型号名。",
+      "reference": "规格书频段表、区域参数、当地无线电要求。"
     },
     {
       "category": "06 看懂参数与软件资料",
       "name": "天线｜Antenna",
-      "definition": "把电路里的射频信号与空间中的电磁波相互转换的部件，像无线设备收发信息的出口。",
-      "example": "采用板载天线或匹配的外接天线完成无线连接。",
-      "caution": "不是越大越好；频段、匹配、安装位置、外壳和周围金属都会影响表现。",
+      "definition": "把电路里的射频信号和空间的电磁波互相转换的部件，像无线设备收发信息的“出口”。",
+      "example": "用板载天线或外接天线完成无线连接。",
+      "caution": "不是越大越好；频段、匹配、安装位置、外壳、周围金属都影响表现。",
       "reference": "天线规格、模组推荐方案、净空与安装要求。"
     },
     {
       "category": "06 看懂参数与软件资料",
       "name": "功耗 / 低功耗｜Power Consumption",
-      "definition": "设备运行时消耗的电能快慢；低功耗设计常通过休眠和减少工作时间节电，像合理安排工作与休息。",
-      "example": "电池传感器平时休眠，定期唤醒采样并上报。",
-      "caution": "休眠电流不能代表整机平均功耗，更不能直接推算续航；还要看电压、工作周期和电池。",
-      "reference": "规格书各模式电流、测量条件、低功耗指南与整机测试。"
+      "definition": "设备耗电快慢；低功耗就是靠休眠、少干活来省电，像合理安排工作与休息。",
+      "example": "电池供电的传感器平时休眠，定时醒来采样、上报。",
+      "caution": "休眠电流不能代表整机平均功耗，更别直接推算续航；还要看电压、工作周期、电池。",
+      "reference": "规格书各模式电流、测量条件、低功耗指南、整机测试。"
     },
     {
       "category": "06 看懂参数与软件资料",
       "name": "发射功率 / dBm",
-      "definition": "发射功率描述发出信号的功率；dBm 是以 1 mW 为参考的对数功率单位，例如 0 dBm = 1 mW，10 dBm = 10 mW。",
+      "definition": "dBm 就是“喊多大声”。0dBm=1 毫瓦，每加 3 大一倍；20dBm 约等于 0.1 瓦。数字越大传得越远，但也越费电、越可能超当地法规。",
       "example": "比较模组可配置的发射功率档位。",
-      "caution": "dBm 也可用于接收信号功率；发射功率不是距离或天线增益，不能据此保证覆盖。",
-      "reference": "规格书发射功率、测试条件、天线参数与当地发射限制。"
+      "caution": "dBm 也能表示接收功率；发射功率不是距离也不是天线增益，不能据此保证覆盖。",
+      "reference": "规格书发射功率、测试条件、天线参数、当地发射限制。"
     },
     {
       "category": "06 看懂参数与软件资料",
       "name": "SDK｜软件开发工具包",
-      "definition": "厂商提供的库、工具、示例和文档，像开发设备软件的工具箱。",
+      "definition": "厂商给的库、工具、示例和文档，像开发设备软件的工具箱。",
       "example": "开发者从联网示例开始，加入自己的业务逻辑。",
-      "caution": "SDK 不是可直接交付的完整产品，也不等于已经烧录进设备的固件。",
-      "reference": "官方开发文档、支持芯片列表、示例与版本说明。"
+      "caution": "SDK 不是能直接交付的成品，也不等于已经烧进设备的固件。",
+      "reference": "官方开发文档、支持芯片列表、示例、版本说明。"
     },
     {
       "category": "06 看懂参数与软件资料",
       "name": "Firmware｜固件",
-      "definition": "运行在设备上的软件，决定硬件具体怎样工作，像设备执行任务的操作说明。",
+      "definition": "跑在设备里的软件，决定硬件具体怎么干活，像设备执行任务的操作说明。",
       "example": "给模组烧录支持 AT 指令或特定应用的固件。",
       "caution": "同一硬件换固件可能改变功能；升级包必须匹配型号和版本，不能默认支持 OTA。",
-      "reference": "固件下载页、版本记录、烧录 / 升级指南。"
+      "reference": "固件下载页、版本记录、烧录/升级指南。"
     }
   ],
-  "updatedAt": "2026-09-20T01:51:29.143Z",
+  "updatedAt": "2026-09-20T03:30:00.000Z",
   "name": "Maeve",
   "products": [
     {
-      "name": "WB2系列",
+      "name": "Ai-WB2系列",
       "category": "通信类",
       "family": "Wi-Fi系列",
       "url": "https://docs.ai-thinker.com/en/wb2/index.html"
     },
     {
-      "name": "M61系列",
+      "name": "Ai-M61系列",
       "category": "通信类",
       "family": "Wi-Fi系列",
       "url": "https://docs.ai-thinker.com/en/ai_m61/index.html"
     },
     {
-      "name": "M62系列",
+      "name": "Ai-M62系列",
       "category": "通信类",
       "family": "Wi-Fi系列",
       "url": "https://docs.ai-thinker.com/en/ai_m62/index.html"
     },
     {
-      "name": "M64系列",
+      "name": "Ai-M64系列",
       "category": "通信类",
       "family": "Wi-Fi系列",
       "url": "https://docs.ai-thinker.com/en/ai_m64/index.html"
@@ -295,13 +407,13 @@
       "url": "https://docs.ai-thinker.com/en/vc/index.html"
     },
     {
-      "name": "BU",
+      "name": "BU系列",
       "category": "通信类",
       "family": "UWB系列",
       "url": "https://docs.ai-thinker.com/en/uwb_1/index.html"
     },
     {
-      "name": "GP",
+      "name": "GP系列",
       "category": "通信类",
       "family": "GPS系列",
       "url": "https://docs.ai-thinker.com/en/gps_1/index.html"
@@ -313,49 +425,49 @@
       "url": "https://docs.ai-thinker.com/en/si4432/index.html"
     },
     {
-      "name": "01系列",
+      "name": "Rd-01系列",
       "category": "传感类",
       "family": "雷达系列",
       "url": "https://docs.ai-thinker.com/en/rd-01/index.html"
     },
     {
-      "name": "03系列",
+      "name": "Rd-03系列",
       "category": "传感类",
       "family": "雷达系列",
       "url": "https://docs.ai-thinker.com/en/rd-03/index.html"
     },
     {
-      "name": "04系列",
+      "name": "Rd-04系列",
       "category": "传感类",
       "family": "雷达系列",
       "url": "https://docs.ai-thinker.com/en/rd-04/index.html"
     },
     {
-      "name": "6X系列",
+      "name": "Rd-6X系列",
       "category": "传感类",
       "family": "雷达系列",
       "url": "https://docs.ai-thinker.com/en/rd-6x/index.html"
     },
     {
-      "name": "100系列",
+      "name": "Rd-100系列",
       "category": "传感类",
       "family": "雷达系列",
       "url": "https://docs.ai-thinker.com/en/rd-100/index.html"
     },
     {
-      "name": "BV系列",
+      "name": "Ai-BV01系列",
       "category": "AI类",
       "family": "AI系列",
       "url": "https://docs.ai-thinker.com/en/ai-bv01/index.html"
     },
     {
-      "name": "PalChat系列",
+      "name": "AiPi-PalChat系列",
       "category": "AI类",
       "family": "AI系列",
       "url": "https://docs.ai-thinker.com/en/aipi-palchatv1/index.html"
     },
     {
-      "name": "WV系列",
+      "name": "Ai-WV01系列",
       "category": "AI类",
       "family": "AI系列",
       "url": "https://docs.ai-thinker.com/en/ai-wv01/index.html"
