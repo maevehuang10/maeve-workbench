@@ -1,4 +1,4 @@
-const CACHE='maeve-pocket-8495a88b9b0e';
+const CACHE='maeve-pocket-4a69a346a366';
 const ASSETS=['./','./index.html','./classroom.html','./data.json','./manifest.webmanifest','./icon-192.png','./icon-512.png'];
 self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(ASSETS)).then(()=>self.skipWaiting())));
 self.addEventListener('activate',event=>event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('maeve-pocket-')&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
