@@ -402,19 +402,19 @@
     },
     {
       "name": "VC系列",
-      "category": "通信类",
+      "category": "感知类",
       "family": "离线语音系列",
       "url": "https://docs.ai-thinker.com/en/vc/index.html"
     },
     {
       "name": "BU系列",
-      "category": "通信类",
+      "category": "定位类",
       "family": "UWB系列",
       "url": "https://docs.ai-thinker.com/en/uwb_1/index.html"
     },
     {
       "name": "GP系列",
-      "category": "通信类",
+      "category": "定位类",
       "family": "GPS系列",
       "url": "https://docs.ai-thinker.com/en/gps_1/index.html"
     },
@@ -426,31 +426,31 @@
     },
     {
       "name": "Rd-01系列",
-      "category": "传感类",
+      "category": "感知类",
       "family": "雷达系列",
       "url": "https://docs.ai-thinker.com/en/rd-01/index.html"
     },
     {
       "name": "Rd-03系列",
-      "category": "传感类",
+      "category": "感知类",
       "family": "雷达系列",
       "url": "https://docs.ai-thinker.com/en/rd-03/index.html"
     },
     {
       "name": "Rd-04系列",
-      "category": "传感类",
+      "category": "感知类",
       "family": "雷达系列",
       "url": "https://docs.ai-thinker.com/en/rd-04/index.html"
     },
     {
       "name": "Rd-6X系列",
-      "category": "传感类",
+      "category": "感知类",
       "family": "雷达系列",
       "url": "https://docs.ai-thinker.com/en/rd-6x/index.html"
     },
     {
       "name": "Rd-100系列",
-      "category": "传感类",
+      "category": "感知类",
       "family": "雷达系列",
       "url": "https://docs.ai-thinker.com/en/rd-100/index.html"
     },
