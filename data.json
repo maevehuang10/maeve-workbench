@@ -585,6 +585,12 @@
     {
       "name": "weekly-content-planner",
       "category": "选题与策划"
+    },
+    {
+      "name": "WorkBuddy 使用教程",
+      "category": "AI 工具使用",
+      "url": "https://mp.weixin.qq.com/s/nFSSzluc57xPv50Zbh4owg",
+      "desc": "① 安装：官网 workbuddy.cn 下载，微信扫码登录即用\n② 场景模式：对话区可切换「代码开发 / 日常办公 / 设计创意」，每个模式下有更细的提示词模板\n③ 工作模式：Ask=纯聊天 / Plan=先出计划再动手 / Craft=直接开干（默认）。只想问问题先切 Ask，避免误耗积分\n④ 模型：内置 DeepSeek、GLM、Kimi 等，通用推荐 DeepSeek V4 Pro；也可在设置里接入自己的 API Key\n⑤ 专家：100+ 行业专家即点即用；专家团多 Agent 协作（积分约 3-5 倍）；可自建专家沉淀方法论\n⑥ 技能：Skills 市场（推荐 / SkillHub / 套件），建议开启「技能自动更新」\n⑦ 连接器：扫码即接 QQ 邮箱、腾讯会议、腾讯文档、通达信等\n⑧ 必做设置：开技能自动更新 + 锁屏远程 + 对话记忆；个性化里配置自定义指令\n⑨ 远程控制：微信小程序支持「云端工作 / 连接电脑」，人不在电脑前也能派活"
     }
   ],
   "topics": [
