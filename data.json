@@ -918,6 +918,36 @@
       "id": "d4988a0a-a1a9-42af-bbff-326b25ff4190",
       "createdAt": "2026-09-29T07:16:45.035Z",
       "updatedAt": "2026-09-29T07:16:45.035Z"
+    },
+    {
+      "name": "LinkedIn主页",
+      "url": "https://www.linkedin.com/company/ai-thinker",
+      "category": "平台",
+      "note": "Ai-Thinker 公司主页",
+      "pinned": false,
+      "id": "8ec49494-327c-4159-afa0-5b0310f15fed",
+      "createdAt": "2026-09-29T07:50:20.46Z",
+      "updatedAt": "2026-09-29T07:50:20.46Z"
+    },
+    {
+      "name": "GitHub",
+      "url": "https://github.com/Ai-Thinker-iot",
+      "category": "文章平台",
+      "note": "Ai-Thinker 开源项目",
+      "pinned": false,
+      "id": "94933a96-5076-450d-bd9f-ea40aeaefc2c",
+      "createdAt": "2026-09-29T07:50:20.477Z",
+      "updatedAt": "2026-09-29T07:50:20.477Z"
+    },
+    {
+      "name": "Medium",
+      "url": "https://medium.com/@aithinker666",
+      "category": "文章平台",
+      "note": "Ai-Thinker 文章平台",
+      "pinned": false,
+      "id": "9f68e3e6-6a69-4f37-b78a-6cd1ba2bf589",
+      "createdAt": "2026-09-29T07:50:20.492Z",
+      "updatedAt": "2026-09-29T07:50:20.492Z"
     }
   ],
   "changelog": [
