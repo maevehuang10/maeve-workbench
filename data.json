@@ -337,7 +337,7 @@
       "reference": "固件下载页、版本记录、烧录/升级指南。"
     }
   ],
-  "updatedAt": "2026-09-20T03:30:00.000Z",
+  "updatedAt": "2026-09-20T03:30:00Z",
   "name": "Maeve",
   "products": [
     {
@@ -609,39 +609,315 @@
   ],
   "websites": [
     {
-      "name": "LinkedIn",
-      "category": "平台",
-      "url": "https://www.linkedin.com/"
+      "id": "3db38aa2-c4e4-4c2d-bbba-08f6c8eb2144",
+      "name": "帖子+粉丝数量主页",
+      "url": "https://www.linkedin.com/company/35421951/admin/page-posts/published/",
+      "category": "LinkedIn",
+      "note": "帖子+粉丝数量主页",
+      "pinned": true,
+      "updatedAt": "2026-09-11T08:15:05.566Z"
     },
     {
-      "name": "Facebook",
-      "category": "平台",
-      "url": "https://www.facebook.com/aithinkersales"
+      "id": "c01d044e-6cc4-486b-ba80-b19b959dcc1a",
+      "name": "Shorts 主页",
+      "url": "https://www.youtube.com/@ai-thinker./shorts",
+      "category": "YouTube",
+      "note": "Shorts 主页",
+      "pinned": true,
+      "updatedAt": "2026-09-11T08:15:05.725Z"
     },
     {
-      "name": "YouTube",
-      "category": "平台",
-      "url": "https://www.youtube.com/@ai-thinker./shorts"
+      "id": "557ccb1e-bfb0-469b-850a-0282532a35bd",
+      "name": "帖子主页",
+      "url": "https://www.facebook.com/aithinkersales",
+      "category": "Facebook",
+      "note": "帖子主页",
+      "pinned": true,
+      "updatedAt": "2026-09-11T08:15:05.633Z"
     },
     {
-      "name": "TikTok",
-      "category": "平台",
-      "url": "https://www.tiktok.com/@aithinker"
+      "id": "088c66a2-2c1d-4135-8370-be28de11f5ea",
+      "name": "帖子+粉丝数量主页",
+      "url": "https://www.tiktok.com/@aithinker",
+      "category": "TikTok",
+      "note": "帖子+粉丝数量主页",
+      "pinned": true,
+      "updatedAt": "2026-09-11T08:15:05.79Z"
     },
     {
+      "id": "1e208d96-b3e9-49af-b03c-5cf8b04585e1",
       "name": "ChatGPT",
-      "category": "工具",
-      "url": "https://chatgpt.com/"
+      "url": "https://chatgpt.com/",
+      "category": "AI 工具",
+      "note": "内容讨论与草稿",
+      "pinned": true
     },
     {
-      "name": "Gmail",
-      "category": "工具",
-      "url": "https://mail.google.com/mail/u/0/#inbox"
-    },
-    {
+      "id": "1817b6fd-f16f-4fac-9035-cc9b51c15e87",
       "name": "飞书",
-      "category": "工具",
-      "url": "https://www.feishu.cn/"
+      "url": "https://www.feishu.cn/",
+      "category": "协作工具",
+      "note": "协作与资料",
+      "pinned": true
+    },
+    {
+      "name": "评论主页",
+      "url": "https://www.linkedin.com/company/35421951/admin/notifications/comments/",
+      "category": "LinkedIn",
+      "note": "评论主页",
+      "pinned": false,
+      "id": "979c8213-5402-4e68-b417-5a14c756134b",
+      "createdAt": "2026-09-11T08:15:05.586Z",
+      "updatedAt": "2026-09-11T08:15:05.586Z"
+    },
+    {
+      "name": "广告主页",
+      "url": "https://www.linkedin.com/campaignmanager/accounts/517338718/campaign-groups?businessId=7466011091723022336",
+      "category": "LinkedIn",
+      "note": "广告主页",
+      "pinned": false,
+      "id": "bbd4eac1-fef1-45a7-a7f5-d968f4ec5185",
+      "createdAt": "2026-09-11T08:15:05.6Z",
+      "updatedAt": "2026-09-11T08:15:05.6Z"
+    },
+    {
+      "name": "账单主页",
+      "url": "https://www.linkedin.com/marketing/billing/accounts/7466011091723022336/invoices",
+      "category": "LinkedIn",
+      "note": "账单主页",
+      "pinned": false,
+      "id": "caf3c08a-4035-4ba3-a7b9-26fc41bfc217",
+      "createdAt": "2026-09-11T08:15:05.612Z",
+      "updatedAt": "2026-09-11T08:15:05.612Z"
+    },
+    {
+      "name": "月度数据下载",
+      "url": "https://www.linkedin.com/company/35421951/admin/analytics/updates/",
+      "category": "LinkedIn",
+      "note": "月度数据下载",
+      "pinned": false,
+      "id": "54e45723-3881-4cac-a37d-ac4a9ff92a88",
+      "createdAt": "2026-09-11T08:15:05.624Z",
+      "updatedAt": "2026-09-11T08:15:05.624Z"
+    },
+    {
+      "name": "粉丝数量主页",
+      "url": "https://business.facebook.com/latest/insights/people?asset_id=2120174104948601&business_id=1363660732315032&ir_qe_exposed=1&nav_ref=bizweb_home_new_insights_card_help_tray&audience_tab=demographics",
+      "category": "Facebook",
+      "note": "粉丝数量主页",
+      "pinned": false,
+      "id": "2478f3f4-213b-44e8-ae21-4824e9a67cb6",
+      "createdAt": "2026-09-11T08:15:05.646Z",
+      "updatedAt": "2026-09-11T08:15:05.646Z"
+    },
+    {
+      "name": "评论主页",
+      "url": "https://www.facebook.com/professional_dashboard/engagement/comments_manager/?tab=your_posts&filter=recommended",
+      "category": "Facebook",
+      "note": "评论主页",
+      "pinned": false,
+      "id": "c4e6d296-5a1c-4c92-b3ce-0a39f46a9843",
+      "createdAt": "2026-09-11T08:15:05.655Z",
+      "updatedAt": "2026-09-11T08:15:05.655Z"
+    },
+    {
+      "name": "新建广告主页",
+      "url": "https://business.facebook.com/latest/ads_creation/?asset_id=2120174104948601&business_id=1363660732315032&ir_qe_exposed=1&ad_account_id=1121002229404202&entry_point=bizweb_ad_center_header&is_ads_drafts_expanded=false&nav_ref=internal_nav",
+      "category": "Facebook",
+      "note": "新建广告主页",
+      "pinned": false,
+      "id": "e122a3d1-70ad-4c4b-9e50-23d5a7203473",
+      "createdAt": "2026-09-11T08:15:05.664Z",
+      "updatedAt": "2026-09-11T08:15:05.664Z"
+    },
+    {
+      "name": "新建表单线索主页",
+      "url": "https://adsmanager.facebook.com/adsmanager/manage/ads/edit/standalone?act=1589985382545948&ads_manager_write_regions=true&attribution_windows=default&business_id=1363660732315032&columns=name%2Cdelivery%2Crecommendations_guidance%2Cresults%2Ccost_per_result%2Cbudget%2Cspend%2Cimpressions%2Creach%2Cactions%3Aonsite_conversion.total_messaging_connection%2Cactions%3Aonsite_conversion.messaging_first_reply%2Cactions%3Aomni_purchase%2Cschedule%2Cend_time%2Cattribution_setting%2Cbid%2Clast_significant_edit%2Cquality_score_organic%2Cquality_score_ectr%2Cquality_score_ecvr%2Ccampaign_name%2Ccost_per_action_type%3Aomni_purchase&nav_entry_point=lep_217&nav_source=unknown&selected_ad_ids=52689394044084&selected_adset_ids=52689391024284&treenav=true&current_step=0",
+      "category": "Facebook",
+      "note": "新建表单线索主页",
+      "pinned": false,
+      "id": "cb7233a1-33a8-4ce2-a1f4-7c76b3351b5d",
+      "createdAt": "2026-09-11T08:15:05.676Z",
+      "updatedAt": "2026-09-11T08:15:05.676Z"
+    },
+    {
+      "name": "账单主页",
+      "url": "https://business.facebook.com/latest/billing_hub/accounts/details/?asset_id=1589985382545948&business_id=1363660732315032&payment_account_id=1589985382545948&placement=BILLING_HUB&payment_method_id=",
+      "category": "Facebook",
+      "note": "账单主页",
+      "pinned": false,
+      "id": "733148b8-f6bf-43b2-8f3f-c64d5345adc6",
+      "createdAt": "2026-09-11T08:15:05.691Z",
+      "updatedAt": "2026-09-11T08:15:05.691Z"
+    },
+    {
+      "name": "月度数据下载",
+      "url": "https://business.facebook.com/latest/posts/published_posts/?asset_id=2120174104948601&business_id=1363660732315032&ir_qe_exposed=1",
+      "category": "Facebook",
+      "note": "月度数据下载",
+      "pinned": false,
+      "id": "a04aecb9-cb20-473e-8489-27276f256d6d",
+      "createdAt": "2026-09-11T08:15:05.708Z",
+      "updatedAt": "2026-09-11T08:15:05.708Z"
+    },
+    {
+      "name": "粉丝数量主页",
+      "url": "https://studio.youtube.com/channel/UCBt7R0zW4nPj2FpJyua6PwA",
+      "category": "YouTube",
+      "note": "粉丝数量主页",
+      "pinned": false,
+      "id": "910e8d7f-3bb4-4afc-8326-63cb489a62d5",
+      "createdAt": "2026-09-11T08:15:05.738Z",
+      "updatedAt": "2026-09-11T08:15:05.738Z"
+    },
+    {
+      "name": "评论主页",
+      "url": "https://studio.youtube.com/channel/UCBt7R0zW4nPj2FpJyua6PwA/comments/inbox?filter=%5B%7B%22isDisabled%22%3Afalse%2C%22isPinned%22%3Atrue%2C%22name%22%3A%22SORT_BY%22%2C%22value%22%3A%22SORT_BY_MOST_RELEVANT%22%7D%2C%7B%22name%22%3A%22ENGAGED_STATUS%22%2C%22value%22%3A%5B%22COMMENT_CATEGORY_NOT_ENGAGED%22%5D%7D%2C%7B%22name%22%3A%22PARENT_ENTITY_CONTENT_TYPE%22%2C%22value%22%3A%5B%22PARENT_ENTITY_CONTENT_TYPE_WATCH%22%2C%22PARENT_ENTITY_CONTENT_TYPE_SHORT%22%2C%22PARENT_ENTITY_CONTENT_TYPE_CREATOR_POST%22%5D%7D%5D",
+      "category": "YouTube",
+      "note": "评论主页",
+      "pinned": false,
+      "id": "518c16c3-d1ee-4a36-8e0c-65cbe98ef127",
+      "createdAt": "2026-09-11T08:15:05.747Z",
+      "updatedAt": "2026-09-11T08:15:05.747Z"
+    },
+    {
+      "name": "账单主页",
+      "url": "https://ads.google.com/aw/billing/summary?ocid=8374044187&billingId=8462003908&ecl=6861578577,7438219807&uscid=8374044187&__c=6134549763&euid=953428525&__u=1210942725",
+      "category": "YouTube",
+      "note": "账单主页",
+      "pinned": false,
+      "id": "d8bbbcf4-840d-407b-be60-46e3b794b84f",
+      "createdAt": "2026-09-11T08:15:05.757Z",
+      "updatedAt": "2026-09-11T08:15:05.757Z"
+    },
+    {
+      "name": "广告主页",
+      "url": "https://ads.google.com/aw/campaigns?ocid=8374044187&ecl=6861578577%2C7438219807&uscid=8374044187&__c=6134549763&euid=953428525&__u=1210942725",
+      "category": "YouTube",
+      "note": "广告主页",
+      "pinned": false,
+      "id": "d951e5fa-69ba-4838-bca0-4df0a621035b",
+      "createdAt": "2026-09-11T08:15:05.771Z",
+      "updatedAt": "2026-09-11T08:15:05.771Z"
+    },
+    {
+      "name": "月度数据下载",
+      "url": "https://studio.youtube.com/channel/UCBt7R0zW4nPj2FpJyua6PwA/analytics/tab-overview/period-default/explore?entity_type=CHANNEL&entity_id=UCBt7R0zW4nPj2FpJyua6PwA&time_period=4_weeks&explore_type=TABLE_AND_CHART&metric=AVERAGE_WATCH_TIME&granularity=DAY&t_metrics=AVERAGE_WATCH_TIME&t_metrics=EXTERNAL_VIEWS&t_metrics=EXTERNAL_WATCH_TIME&t_metrics=SUBSCRIBERS_NET_CHANGE&t_metrics=VIDEO_THUMBNAIL_IMPRESSIONS&t_metrics=VIDEO_THUMBNAIL_IMPRESSIONS_VTR&dimension=VIDEO&o_column=EXTERNAL_WATCH_TIME&o_direction=ANALYTICS_ORDER_DIRECTION_DESC",
+      "category": "YouTube",
+      "note": "月度数据下载",
+      "pinned": false,
+      "id": "fca9f983-aaa5-444a-9737-0d6eadf2ef0b",
+      "createdAt": "2026-09-11T08:15:05.78Z",
+      "updatedAt": "2026-09-11T08:15:05.78Z"
+    },
+    {
+      "name": "月度数据下载",
+      "url": "https://www.tiktok.com/tiktokstudio/content",
+      "category": "TikTok",
+      "note": "月度数据下载",
+      "pinned": false,
+      "id": "e4612bcc-12f8-4955-a7ae-8165ffb5781f",
+      "createdAt": "2026-09-11T08:15:05.801Z",
+      "updatedAt": "2026-09-11T08:15:05.801Z"
+    },
+    {
+      "name": "Gmail 主页",
+      "url": "https://mail.google.com/mail/u/0/#inbox",
+      "category": "邮箱",
+      "note": "Gmail 主页",
+      "pinned": false,
+      "id": "e67d50bc-89f6-43aa-aca2-8677cbfa9877",
+      "createdAt": "2026-09-11T08:16:36.589Z",
+      "updatedAt": "2026-09-11T08:16:36.589Z"
+    },
+    {
+      "name": "公司邮箱主页",
+      "url": "http://mail.tech-now.com/cgi-bin/frame_html?sid=PKM3FFXta8Finh91,2&sign_type=&r=1f28cd806f7d3dc4eb16c40aa6407db4",
+      "category": "邮箱",
+      "note": "公司邮箱主页",
+      "pinned": false,
+      "id": "7c90c701-185b-4376-8154-c043c1ad43dd",
+      "createdAt": "2026-09-11T08:16:36.607Z",
+      "updatedAt": "2026-09-11T08:16:36.607Z"
+    },
+    {
+      "id": "39f04789-96e5-44aa-b297-2004e8977034",
+      "name": "内容数据主页",
+      "url": "https://business.facebook.com/latest/posts/published_posts/?business_id=1363660732315032&asset_id=2120174104948601",
+      "category": "Facebook",
+      "note": "内容数据主页",
+      "pinned": false,
+      "updatedAt": "2026-09-17T03:39:41.5943661Z"
+    },
+    {
+      "name": "月度账单下载",
+      "url": "https://business.facebook.com/latest/billing_hub/payment_activity/?business_id=1363660732315032&asset_id=1589985382545948&placement=BILLING_HUB&payment_account_id=1589985382545948&date=1789574400_1790179200",
+      "category": "Facebook",
+      "note": "月度账单下载",
+      "pinned": false,
+      "id": "18842da8-ba94-4a72-9967-95268c2413e3",
+      "createdAt": "2026-09-23T02:26:41.003Z",
+      "updatedAt": "2026-09-23T02:26:41.003Z"
+    },
+    {
+      "name": "Hackster.io",
+      "url": "https://www.hackster.io/ai-thinker",
+      "category": "文章平台",
+      "note": "Ai-Thinker 项目文章与教程",
+      "pinned": false,
+      "id": "b3cec264-922b-46a0-a976-f3beb333330e",
+      "createdAt": "2026-09-23T05:46:03.807Z",
+      "updatedAt": "2026-09-23T05:46:03.807Z"
+    },
+    {
+      "name": "Hackaday.io",
+      "url": "https://hackaday.io/projects/hacker/1518627",
+      "category": "文章平台",
+      "note": "Ai-Thinker 项目页面",
+      "pinned": false,
+      "id": "7325627a-7fb0-4e69-820f-96b2a6267f9d",
+      "createdAt": "2026-09-23T05:46:03.824Z",
+      "updatedAt": "2026-09-23T05:46:03.824Z"
+    },
+    {
+      "name": "OSHWLab",
+      "url": "https://oshwlab.com/aithinker666/works",
+      "category": "文章平台",
+      "note": "Ai-Thinker 开源硬件作品",
+      "pinned": false,
+      "id": "d8bd2445-d5a4-465b-be48-ef8eaf230a61",
+      "createdAt": "2026-09-23T05:46:03.837Z",
+      "updatedAt": "2026-09-23T05:46:03.837Z"
+    },
+    {
+      "name": "香港国际站",
+      "url": "https://aithinkerhk.m.en.alibaba.com/productlist.html?spm=a2700.shop_pl.88.10.1471216bQL9QJJ",
+      "category": "国际站",
+      "note": "香港国际站产品列表",
+      "pinned": false,
+      "id": "d747870e-ec64-4b3a-82f7-c97a23fd2ee8",
+      "createdAt": "2026-09-29T07:16:34.158Z",
+      "updatedAt": "2026-09-29T07:16:34.158Z"
+    },
+    {
+      "name": "旧国际站",
+      "url": "https://ai-thinker.en.alibaba.com/",
+      "category": "国际站",
+      "note": "旧版国际站",
+      "pinned": false,
+      "id": "7f5675f5-2bea-4138-8074-e772d59ac2f6",
+      "createdAt": "2026-09-29T07:16:34.177Z",
+      "updatedAt": "2026-09-29T07:16:34.177Z"
+    },
+    {
+      "name": "岗位培训与 AI 项目计划",
+      "url": "https://fuyiran-training-ai-plan.aithinker666.chatgpt.site/",
+      "category": "培训与计划",
+      "note": "岗位培训与 AI 项目计划",
+      "pinned": false,
+      "id": "d4988a0a-a1a9-42af-bbff-326b25ff4190",
+      "createdAt": "2026-09-29T07:16:45.035Z",
+      "updatedAt": "2026-09-29T07:16:45.035Z"
     }
   ],
   "changelog": [
