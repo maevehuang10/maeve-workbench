@@ -648,17 +648,19 @@
       "id": "1e208d96-b3e9-49af-b03c-5cf8b04585e1",
       "name": "ChatGPT",
       "url": "https://chatgpt.com/",
-      "category": "AI 工具",
+      "category": "工具区",
       "note": "内容讨论与草稿",
-      "pinned": true
+      "pinned": true,
+      "updatedAt": "2026-09-30T01:26:20.637Z"
     },
     {
       "id": "1817b6fd-f16f-4fac-9035-cc9b51c15e87",
       "name": "飞书",
       "url": "https://www.feishu.cn/",
-      "category": "协作工具",
+      "category": "工具区",
       "note": "协作与资料",
-      "pinned": true
+      "pinned": true,
+      "updatedAt": "2026-09-30T01:26:20.649Z"
     },
     {
       "name": "评论主页",
@@ -823,22 +825,22 @@
     {
       "name": "Gmail 主页",
       "url": "https://mail.google.com/mail/u/0/#inbox",
-      "category": "邮箱",
+      "category": "工具区",
       "note": "Gmail 主页",
       "pinned": false,
       "id": "e67d50bc-89f6-43aa-aca2-8677cbfa9877",
       "createdAt": "2026-09-11T08:16:36.589Z",
-      "updatedAt": "2026-09-11T08:16:36.589Z"
+      "updatedAt": "2026-09-30T01:26:20.669Z"
     },
     {
       "name": "公司邮箱主页",
       "url": "http://mail.tech-now.com/cgi-bin/frame_html?sid=PKM3FFXta8Finh91,2&sign_type=&r=1f28cd806f7d3dc4eb16c40aa6407db4",
-      "category": "邮箱",
+      "category": "工具区",
       "note": "公司邮箱主页",
       "pinned": false,
       "id": "7c90c701-185b-4376-8154-c043c1ad43dd",
       "createdAt": "2026-09-11T08:16:36.607Z",
-      "updatedAt": "2026-09-11T08:16:36.607Z"
+      "updatedAt": "2026-09-30T01:26:20.681Z"
     },
     {
       "id": "39f04789-96e5-44aa-b297-2004e8977034",
