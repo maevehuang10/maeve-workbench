@@ -920,16 +920,6 @@
       "updatedAt": "2026-09-29T07:16:45.035Z"
     },
     {
-      "name": "LinkedIn主页",
-      "url": "https://www.linkedin.com/company/ai-thinker",
-      "category": "平台",
-      "note": "Ai-Thinker 公司主页",
-      "pinned": false,
-      "id": "8ec49494-327c-4159-afa0-5b0310f15fed",
-      "createdAt": "2026-09-29T07:50:20.46Z",
-      "updatedAt": "2026-09-29T07:50:20.46Z"
-    },
-    {
       "name": "GitHub",
       "url": "https://github.com/Ai-Thinker-iot",
       "category": "文章平台",
@@ -948,6 +938,16 @@
       "id": "9f68e3e6-6a69-4f37-b78a-6cd1ba2bf589",
       "createdAt": "2026-09-29T07:50:20.492Z",
       "updatedAt": "2026-09-29T07:50:20.492Z"
+    },
+    {
+      "name": "MiniMax 音频处理",
+      "url": "https://www.minimax.cn/audio/text-to-speech",
+      "category": "工具区",
+      "note": "文字转语音与音频处理",
+      "pinned": false,
+      "id": "444e7590-4a33-498c-b61a-7b6aa99531a5",
+      "createdAt": "2026-09-30T01:13:52.888Z",
+      "updatedAt": "2026-09-30T01:13:52.888Z"
     }
   ],
   "changelog": [
