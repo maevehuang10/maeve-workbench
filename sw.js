@@ -1,4 +1,4 @@
-const CACHE='maeve-pocket-eaa58923902e';
+const CACHE='maeve-pocket-locator-20261016';
 const ASSETS=['./','./index.html','./classroom.html','./data.json','./manifest.webmanifest','./icon-192.png','./icon-512.png'];
 self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(ASSETS)).then(()=>self.skipWaiting())));
 self.addEventListener('activate',event=>event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('maeve-pocket-')&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
@@ -10,4 +10,3 @@ self.addEventListener('fetch',event=>{
   return response;
  }).catch(async()=>{const cached=await caches.match(event.request);if(cached){const headers=new Headers(cached.headers);headers.set('X-Maeve-Cache','offline');return new Response(cached.body,{status:cached.status,headers});}if(event.request.mode==='navigate')return caches.match(new URL('./index.html',self.registration.scope).href);return Response.error();}));
 });
-
