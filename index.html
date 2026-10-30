@@ -10,7 +10,7 @@ nav .pocket-usage{position:relative;align-self:center;margin-left:12px;min-width
 .pu-panel h2{font-size:16px;margin:0 0 5px;color:#354b26}.pu-panel .pu-scope{font-size:11px;color:#7b866f;margin:0 0 12px}.pu-panel .pu-month{display:block;font-size:12px;color:#71835f;margin-bottom:6px}.pu-panel .pu-today{font-size:12px;color:#536846;margin:0 0 12px;line-height:1.8}.pu-panel table{width:100%;border-collapse:collapse;font-size:11px}.pu-panel td{padding:7px 2px;border-top:1px solid #e6ecdd;white-space:nowrap}.pu-panel td:not(:first-child){text-align:right}.pu-panel p{font-size:11px;line-height:1.85;color:#78866b;margin:12px 0 0}.pu-panel .pu-error{color:#965f39}
 @media(max-width:700px){nav .pocket-usage{position:static;flex:0 0 100%;margin:3px 0 0;min-width:0}.pocket-usage>summary{border-left:0;border-top:1px solid #eef1e8;padding:6px 12px 0;font-size:11px;gap:6px}.pocket-usage>summary b{font-size:16px}.pocket-usage .pu-panel{right:50%;transform:translateX(50%);bottom:calc(100% + 10px)}main{padding-bottom:160px}#toast{bottom:125px}}
 
-</style></head><body><header><div class="brand"><span class="logo">m.</span><div><h1>Maeve</h1><small>口袋工作台 · 只读版</small></div></div><button id="install" hidden>安装到手机</button></header><main><div class="step1"><a href="./classroom.html"><strong>第 1 步 · 先看物联网漫画课堂 ↗</strong><span>通过生活场景理解「传感器采集 → 设备处理 → 通信传输 → 平台应用」，认识安信可的上下游关系。</span></a></div><div class="intro"><div><h2 id="title">产品资料</h2><p id="subtitle">按产品系列，随时查找。</p></div><span class="count" id="count"></span></div><div class="toolbar"><input id="search" type="search" placeholder="搜索名称或系列" aria-label="搜索名称或系列"><select id="filter" aria-label="分类"><option>全部</option></select></div><div id="error" role="alert" hidden></div><div id="content"><p class="empty">正在读取资料…</p></div><div class="statusbar"><span id="updated"></span><button id="refresh">检查更新</button></div><details class="help" id="changelog"><summary>更新日志</summary><div id="cl-body">加载中…</div></details><details class="help"><summary>安装与更新说明</summary>在安卓 Chrome 中打开本站，点击“安装到手机”；如果未显示按钮，可从浏览器菜单选择“添加到主屏幕”或“安装应用”。<br>这里显示的是已发布快照。本机工作台修改后，需要重新导出并上传，手机才会获取新内容。断网时可查看上次缓存；打开外部链接需要网络。<br>这是公开查看版，不包含内部备注、草稿或登录参数。使用次数仅保存在当前浏览器，不会公开上传。</details></main><nav aria-label="栏目"><button data-tab="terms" class="active">IoT 术语</button><button data-tab="products">产品资料</button><button data-tab="skills">AI 知识库</button><button data-tab="websites">网站入口</button><details class="pocket-usage" id="pocket-usage"><summary aria-label="查看当前浏览器的每月使用记录"><span>本月使用</span><b id="pocket-usage-count" aria-live="polite">—</b><span>次</span><span class="pu-arrow" aria-hidden="true">▴</span></summary><section class="pu-panel" aria-label="个人使用统计"><h2>使用记录</h2><p class="pu-scope">当前浏览器 · 北京时间</p><time class="pu-month" id="pocket-usage-month"></time><p class="pu-today" id="pocket-usage-today"></p><table aria-label="月度使用次数与天数"><tbody id="pocket-usage-history"></tbody></table><p id="pocket-usage-since"></p><p>间隔 30 分钟后再次使用算新一次，跨天重新计数。刷新、切换栏目和多开窗口不重复累加。</p><p>记录保存在当前浏览器，关闭后仍保留；不同设备分别计数，清理网站数据会清空记录。</p><p class="pu-error" id="pocket-usage-error" role="status" hidden>当前浏览器暂时无法保存使用记录。</p></section></details></nav><div id="toast" role="status" hidden></div><div id="skill-modal" class="modal" hidden><div class="modal-box"><div class="m-head"><b id="m-name"></b><button class="m-close" data-close>×</button></div><div class="m-block"><h4>WorkBuddy 用户</h4><p>1. 打开 <a href="https://github.com/maevehuang10/maeve-skills" target="_blank" rel="noopener">maeve-skills 仓库</a>，点 Code → Download ZIP 下载<br>2. 解压后把 <code id="m-wb-path"></code> 文件夹放进 <code>~/.workbuddy/skills/</code> 目录<br>3. 重启 WorkBuddy 即可使用</p></div><div class="m-block"><h4>Codex 用户</h4><p>在终端运行下面这条命令：</p><code class="m-cmd" id="m-cmd"></code><button class="m-copy" data-copy>复制命令</button></div></div></div><script>
+</style></head><body><header><div class="brand"><span class="logo">m.</span><div><h1>Maeve</h1><small>口袋工作台 · 只读版</small></div></div><button id="install" hidden>安装到手机</button></header><main><div class="step1"><a href="./classroom.html"><strong>第 1 步 · 先看物联网漫画课堂 ↗</strong><span>通过生活场景理解「传感器采集 → 设备处理 → 通信传输 → 平台应用」，认识安信可的上下游关系。</span></a></div><div class="intro"><div><h2 id="title">产品资料</h2><p id="subtitle">按产品系列，随时查找。</p></div><span class="count" id="count"></span></div><div class="toolbar"><input id="search" type="search" placeholder="搜索名称或系列" aria-label="搜索名称或系列"><select id="filter" aria-label="分类"><option>全部</option></select></div><div id="error" role="alert" hidden></div><div id="content"><p class="empty">正在读取资料…</p></div><div class="statusbar"><span id="updated"></span><button id="refresh">检查更新</button></div><details class="help" id="changelog"><summary>更新日志</summary><div id="cl-body">加载中…</div></details><details class="help"><summary>安装与更新说明</summary>在安卓 Chrome 中打开本站，点击“安装到手机”；如果未显示按钮，可从浏览器菜单选择“添加到主屏幕”或“安装应用”。<br>这里显示的是已发布快照。本机工作台修改后，需要重新导出并上传，手机才会获取新内容。断网时可查看上次缓存；打开外部链接需要网络。<br>这是公开查看版，不包含内部备注、草稿或登录参数。点击次数仅保存在当前浏览器，不会公开上传。</details></main><nav aria-label="栏目"><button data-tab="terms" class="active">IoT 术语</button><button data-tab="products">产品资料</button><button data-tab="skills">AI 知识库</button><button data-tab="websites">网站入口</button><details class="pocket-usage" id="pocket-usage"><summary aria-label="查看当前浏览器的每月点击记录"><span>本月点击</span><b id="pocket-usage-count" aria-live="polite">—</b><span>次</span><span class="pu-arrow" aria-hidden="true">▴</span></summary><section class="pu-panel" aria-label="个人使用统计"><h2>点击记录</h2><p class="pu-scope">当前浏览器 · 北京时间</p><time class="pu-month" id="pocket-usage-month"></time><p class="pu-today" id="pocket-usage-today"></p><table aria-label="月度点击次数与天数"><tbody id="pocket-usage-history"></tbody></table><p id="pocket-usage-since"></p><p>网站内每点击一次计 1 次，包括按钮、链接和空白处。打开、刷新、滚动和自动更新不计数。旧版使用次数另行保留，无法换算为点击数。</p><p>记录保存在当前浏览器，关闭后仍保留；不同设备分别计数，清理网站数据会清空记录。</p><p class="pu-error" id="pocket-usage-error" role="status" hidden>当前浏览器暂时无法保存点击记录。</p></section></details></nav><div id="toast" role="status" hidden></div><div id="skill-modal" class="modal" hidden><div class="modal-box"><div class="m-head"><b id="m-name"></b><button class="m-close" data-close>×</button></div><div class="m-block"><h4>WorkBuddy 用户</h4><p>1. 打开 <a href="https://github.com/maevehuang10/maeve-skills" target="_blank" rel="noopener">maeve-skills 仓库</a>，点 Code → Download ZIP 下载<br>2. 解压后把 <code id="m-wb-path"></code> 文件夹放进 <code>~/.workbuddy/skills/</code> 目录<br>3. 重启 WorkBuddy 即可使用</p></div><div class="m-block"><h4>Codex 用户</h4><p>在终端运行下面这条命令：</p><code class="m-cmd" id="m-cmd"></code><button class="m-copy" data-copy>复制命令</button></div></div></div><script>
 'use strict';
 const $=s=>document.querySelector(s),esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let data,tab='terms',installPrompt,timer,cached=false;
@@ -28,55 +28,48 @@ window.addEventListener('online',()=>load());window.addEventListener('offline',(
 if('serviceWorker'in navigator){const controlled=!!navigator.serviceWorker.controller;let reloading=false;navigator.serviceWorker.addEventListener('controllerchange',()=>{if(controlled&&!reloading){reloading=true;location.reload();}});navigator.serviceWorker.register('./sw.js',{updateViaCache:'none'}).catch(()=>{});}
 load();
 </script><script>
-/* 分享版仅在当前浏览器保存使用记录，不上传个人统计。 */
+/* 分享版仅在当前浏览器保存点击记录，不上传个人统计。 */
 (()=>{
  'use strict';
  const root=document.getElementById('pocket-usage');if(!root)return;
- const key='maeve-workbench-pocket-usage-v1',lock='maeve-workbench-pocket-usage';
+ const key='maeve-workbench-pocket-clicks-v1',lock='maeve-workbench-pocket-clicks';
  const dayFormat=new Intl.DateTimeFormat('sv-SE',{timeZone:'Asia/Shanghai',year:'numeric',month:'2-digit',day:'2-digit'});
- const dayOf=value=>dayFormat.format(new Date(value));
  const label=value=>value.replace(/^(\d{4})-(\d{2})$/,'$1 年 $2 月');
  const $=selector=>root.querySelector(selector);
- let lastSent=0,busy=false;
  function read(){
   const value=localStorage.getItem(key);
-  if(!value)return {schema:1,startedAt:null,lastActivityAt:null,months:{}};
-  const data=JSON.parse(value);if(data.schema!==1||!data.months||typeof data.months!=='object'||Array.isArray(data.months))throw Error('使用记录格式有误');return data;
+  if(!value)return {schema:2,mode:'clicks',startedAt:null,lastClickAt:null,months:{}};
+  const data=JSON.parse(value);if(data.schema!==2||data.mode!=='clicks'||!data.months||typeof data.months!=='object'||Array.isArray(data.months))throw Error('点击记录格式有误');return data;
  }
  function paint(data){
-  const day=dayOf(Date.now()),month=day.slice(0,7),row=data.months[month]||{count:0,days:{}};
-  $('#pocket-usage-count').textContent=row.count;
-  $('#pocket-usage-month').textContent=label(month);
-  $('#pocket-usage-today').textContent=`今日 ${row.days[day]||0} 次 · 本月使用 ${Object.keys(row.days).length} 天`;
+  const day=dayFormat.format(new Date()),month=day.slice(0,7),row=data.months[month]||{count:0,days:{}};
+  $('#pocket-usage-count').textContent=row.count;$('#pocket-usage-month').textContent=label(month);
+  $('#pocket-usage-today').textContent=`今日 ${row.days[day]||0} 次 · 本月点击 ${Object.keys(row.days).length} 天`;
   const months={...data.months,[month]:row};
   $('#pocket-usage-history').replaceChildren(...Object.entries(months).sort(([a],[b])=>b.localeCompare(a)).map(([month,row])=>{
    const tr=document.createElement('tr');for(const value of [label(month),row.count+' 次',Object.keys(row.days).length+' 天']){const td=document.createElement('td');td.textContent=value;tr.appendChild(td);}return tr;
   }));
-  $('#pocket-usage-since').textContent=data.startedAt?'开始记录：'+new Date(data.startedAt).toLocaleDateString('zh-CN',{timeZone:'Asia/Shanghai'}):'从首次打开后开始记录，过去使用不补算。';
+  $('#pocket-usage-since').textContent=data.startedAt?'点击记录始于：'+new Date(data.startedAt).toLocaleDateString('zh-CN',{timeZone:'Asia/Shanghai'}):'从第一次点击开始记录，过去点击无法补算。';
   $('#pocket-usage-error').hidden=true;
  }
- async function activity(){
-  if(document.hidden||busy||Date.now()-lastSent<60000)return;
-  busy=true;
+ async function record(){
   try{
    const write=()=>{
-    const data=read(),now=Date.now(),day=dayOf(now),month=day.slice(0,7),last=Date.parse(data.lastActivityAt);
-    if(!Number.isFinite(last)||now-last>=30*60000||dayOf(last)!==day){const row=data.months[month]||(data.months[month]={count:0,days:{}});row.count++;row.days[day]=(row.days[day]||0)+1;}
-    const iso=new Date(now).toISOString();data.startedAt||=iso;data.lastActivityAt=iso;
-    localStorage.setItem(key,JSON.stringify(data));paint(data);lastSent=now;
+    const data=read(),now=new Date(),day=dayFormat.format(now),month=day.slice(0,7);
+    const row=data.months[month]||(data.months[month]={count:0,days:{}});row.count++;row.days[day]=(row.days[day]||0)+1;
+    const iso=now.toISOString();data.startedAt||=iso;data.lastClickAt=iso;
+    localStorage.setItem(key,JSON.stringify(data));paint(data);
    };
-   // 支持的浏览器将多窗口写入排队，防止同时打开时覆盖记录。
    if(navigator.locks)await navigator.locks.request(lock,write);else write();
-  }catch{$('#pocket-usage-error').hidden=false;}finally{busy=false;}
+  }catch{$('#pocket-usage-error').hidden=false;}
  }
- for(const event of ['pointerdown','keydown','wheel','scroll'])document.addEventListener(event,e=>{if(e.isTrusted)activity();},{passive:true});
- document.addEventListener('visibilitychange',()=>{if(!document.hidden)activity();});
- window.addEventListener('focus',activity);
- window.addEventListener('storage',e=>{if(e.key!==key)return;try{paint(read());}catch{$('#pocket-usage-error').hidden=false;}});
+ document.addEventListener('click',e=>{if(e.isTrusted)record();},{capture:true,passive:true});
+ function refresh(){try{paint(read());}catch{$('#pocket-usage-error').hidden=false;}}
+ document.addEventListener('visibilitychange',()=>{if(!document.hidden)refresh();});window.addEventListener('focus',refresh);
+ window.addEventListener('storage',e=>{if(e.key===key)refresh();});
  document.addEventListener('click',e=>{if(!root.contains(e.target))root.open=false;});
  root.addEventListener('keydown',e=>{if(e.key==='Escape'){root.open=false;root.querySelector('summary').focus();}});
- try{paint(read());}catch{$('#pocket-usage-error').hidden=false;}
- activity();
+ refresh();
 })();
 
 </script></body></html>
