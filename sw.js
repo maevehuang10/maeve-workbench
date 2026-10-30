@@ -1,4 +1,4 @@
-const CACHE='maeve-pocket-personal-usage-20261029';
+const CACHE='maeve-pocket-clicks-20261030';
 const ASSETS=['./','./index.html','./classroom.html','./data.json','./manifest.webmanifest','./icon-192.png','./icon-512.png'];
 self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(ASSETS)).then(()=>self.skipWaiting())));
 self.addEventListener('activate',event=>event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('maeve-pocket-')&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
