@@ -337,7 +337,7 @@
       "reference": "固件下载页、版本记录、烧录/升级指南。"
     }
   ],
-  "updatedAt": "2026-11-02T03:50:03.475Z",
+  "updatedAt": "2026-11-03T01:38:55.701Z",
   "name": "Maeve",
   "products": [
     {
@@ -956,6 +956,13 @@
       "id": "444e7590-4a33-498c-b61a-7b6aa99531a5",
       "createdAt": "2026-09-30T01:13:52.888Z",
       "updatedAt": "2026-09-30T01:13:52.888Z"
+    },
+    {
+      "name": "评论主页",
+      "category": "TikTok",
+      "url": "https://www.tiktok.com/tiktokstudio/comment",
+      "note": "评论主页",
+      "pinned": false
     }
   ],
   "changelog": [
@@ -988,3 +995,4 @@
     }
   ]
 }
+
