@@ -34,13 +34,15 @@ nav .pocket-usage{position:relative;align-self:center;margin-left:12px;min-width
    ['hashtag-count','Tag 为 3–5 个，使用流量较大的词语，不包括产品词']
   ]],
   ['图片',[
-   ['linkedin-ratio','LinkedIn（LK）图片比例为 3:4'],
-   ['facebook-ratio','Facebook（FB）图片比例为 4:3'],
+   ['poster-ratio','海报尺寸（LK、FB 两个平台）为 4:5，在手机端显示面积最大、视觉效果最好'],
    ['clean-layout-logo','排版简洁，公司 Logo 最多出现 1 次'],
    ['slogan-position','公司 Slogan 放在图片右下角'],
    ['whole-product','产品图完整展示，没有被裁切']
   ]],
   ['其他细节',[
+   ['product-copy-lines','整体海报排版保持简洁；突出产品时，文案控制在三行内'],
+   ['copy-detail-lines','突出文案时，细节控制在 3–5 行内'],
+   ['layout-reference','具体审美排版参考 LK、FB 往期做好的图片，或其他家的内容'],
    ['other-details','其他细节已自行复核']
   ]]
  ];
@@ -50,13 +52,13 @@ nav .pocket-usage{position:relative;align-self:center;margin-left:12px;min-width
   const work=()=>{
    const raw=localStorage.getItem(storageKey),data=raw?JSON.parse(raw):{schema:1,round:1,revision:0,checked:[],updatedAt:null};
    const ids=groups.flatMap(([,items])=>items.map(([id])=>id));
-   if(data.schema!==1||!Number.isSafeInteger(data.round)||data.round<1||!Number.isSafeInteger(data.revision)||!Array.isArray(data.checked)||data.checked.some(id=>!ids.includes(id))||new Set(data.checked).size!==data.checked.length)throw Error('检查记录格式有误，未覆盖原记录。');
+   if(data.schema!==1||!Number.isSafeInteger(data.round)||data.round<1||!Number.isSafeInteger(data.revision)||!Array.isArray(data.checked)||data.checked.some(id=>!ids.includes(id)&&!['linkedin-ratio','facebook-ratio'].includes(id))||new Set(data.checked).size!==data.checked.length)throw Error('检查记录格式有误，未覆盖原记录。');
    if(input){
     if(input.round!==data.round)throw Error('检查清单已开始新一轮，请读取最新状态后重试。');
     if(input.action==='reset'){data.round++;data.checked=[];}
     else if(input.action==='check'&&ids.includes(input.id)&&typeof input.checked==='boolean'){
      const checked=new Set(data.checked);if(checked.has(input.id)===input.checked)return {ok:true,json:async()=>data};
-     if(input.checked)checked.add(input.id);else checked.delete(input.id);data.checked=ids.filter(id=>checked.has(id));
+     if(input.checked)checked.add(input.id);else checked.delete(input.id);data.checked=[...ids,'linkedin-ratio','facebook-ratio'].filter(id=>checked.has(id));
     }else throw Error('检查项不正确。');
     data.revision++;data.updatedAt=new Date().toISOString();localStorage.setItem(storageKey,JSON.stringify(data));
    }
@@ -65,6 +67,7 @@ nav .pocket-usage{position:relative;align-self:center;margin-left:12px;min-width
   return input&&navigator.locks?navigator.locks.request(storageKey,work):work();
  }
  window.addEventListener('storage',e=>{if(e.key===storageKey&&root()&&!pending)load();});
+ const itemIds=groups.flatMap(([,items])=>items.map(([id])=>id));
  const total=groups.reduce((n,[,items])=>n+items.length,0);
  let saved=null,draft=new Set(),queue=Promise.resolve(),pending=0,loading=false,resetting=false,error='';
  const root=()=>document.getElementById('publication-checklist');
@@ -81,7 +84,7 @@ nav .pocket-usage{position:relative;align-self:center;margin-left:12px;min-width
  }
  async function load(){
   if(loading||pending)return;loading=true;paint();
-  try{const r=await browserStateResponse();if(!r.ok)throw Error();saved=await r.json();draft=new Set(saved.checked);error='';}
+  try{const r=await browserStateResponse();if(!r.ok)throw Error();saved=await r.json();draft=new Set(saved.checked.filter(id=>itemIds.includes(id)));error='';}
   catch{error='暂时无法读取检查进度，请重试。';}finally{loading=false;paint();}
  }
  function save(operation){
@@ -97,7 +100,7 @@ nav .pocket-usage{position:relative;align-self:center;margin-left:12px;min-width
    }catch(e){
     error=e.message==='Failed to fetch'?'保存未成功，请重试勾选。':e.message;
     try{const r=await browserStateResponse();if(r.ok)saved=await r.json();}catch{}
-   }finally{pending--;if(pending===0){draft=new Set(saved.checked);resetting=false;}paint();}
+   }finally{pending--;if(pending===0){draft=new Set(saved.checked.filter(id=>itemIds.includes(id)));resetting=false;}paint();}
   });
  }
  document.addEventListener('change',e=>{
@@ -117,7 +120,7 @@ nav .pocket-usage{position:relative;align-self:center;margin-left:12px;min-width
     <summary><span class="operation-method-label">方法 02</span><strong>发布检查清单</strong><small>每次发布前勾选核对，下一次可以重新开始</small></summary>
     <div class="operation-method-body"><div class="checklist-toolbar"><div><strong data-checklist-count>已勾选 ${draft.size} / ${total} 项</strong><small data-checklist-round>第 ${saved?.round||1} 次检查</small></div><button class="button soft" type="button" data-checklist-reset disabled>开始下一次检查</button></div>
     <progress class="checklist-progress" max="${total}" value="${draft.size}" aria-label="本次检查进度"></progress><p class="checklist-status"><span data-checklist-status role="status" aria-live="polite">正在读取…</span><button class="text-button" type="button" data-checklist-retry hidden>重新读取</button></p>
-    <p class="checklist-note">按本次涉及的平台分别核对图片比例。进度保存在当前浏览器；开始下一次检查会清空本次勾选。</p>
+    <p class="checklist-note">LK、FB 海报按本工作台的 4:5 制作标准检查。进度保存在当前浏览器；开始下一次检查会清空本次勾选。</p>
     <div class="checklist-groups">${groups.map(([title,items])=>`<fieldset><legend>${title}</legend>${items.map(([id,label])=>`<label class="checklist-item${draft.has(id)?' is-checked':''}"><input type="checkbox" data-checklist-id="${id}" ${draft.has(id)?'checked':''} ${!saved?'disabled':''}><span>${label}</span></label>`).join('')}</fieldset>`).join('')}</div></div></details>`;
   }
  };
