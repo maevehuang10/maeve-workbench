@@ -41,6 +41,39 @@ nav .pocket-usage{position:relative;align-self:center;margin-left:12px;min-width
 .publication-checklist .checklist-progress::-moz-progress-bar{background:#1876b3}
 .publication-checklist .button{background:#e7f3fb;border-color:#b9d8eb;color:#15557f}
 .publication-checklist .text-button{color:#17649d}
+/* 四平台指标：以蓝色标识，表格在窄屏中横向滚动。 */
+.social-metrics{border-color:#86b9df}
+.social-metrics>summary{background:#176297;color:#fff}
+.social-metrics>summary::marker{color:#fff}
+.social-metrics>summary .operation-method-label,.social-metrics>summary small{color:#e5f2fd}
+.social-metrics>summary:focus-visible{outline-color:#8ac7f2}
+.social-metrics .operation-intro{color:#476477}
+.metrics-updated{font-size:12px;color:#647d8c;margin:-6px 0 22px;line-height:1.8}
+.metrics-section+.metrics-section{margin-top:28px}
+.metrics-section h3{font-size:16px;line-height:1.7;color:#15547e;margin:0 0 12px}
+.metrics-scroll-hint{font-size:12px;color:#647d8c;margin:0 0 10px}
+.metrics-table-wrap{max-width:100%;overflow-x:auto;border:1px solid #c9dfed;border-radius:9px}
+.metrics-table-wrap:focus-visible{outline:3px solid #3283bd;outline-offset:3px}
+.metrics-table{width:100%;min-width:1000px;border-collapse:collapse;table-layout:fixed;font-size:13px;line-height:1.85;color:#304b5b}
+.metrics-table caption{text-align:left;padding:11px 14px;background:#f4f9fd;color:#496b80;font-size:12px}
+.metrics-table th,.metrics-table td{padding:14px;text-align:left;vertical-align:top;border-bottom:1px solid #dbe8f1;overflow-wrap:anywhere}
+.metrics-table thead th{background:#eaf4fb;color:#15547e;font-weight:600}
+.metrics-table th:first-child{width:114px}
+.metrics-table tbody th{background:#f4f9fd;color:#15547e;font-weight:600}
+.metrics-table tbody th small{font-size:11px;font-weight:400;color:#647d8c}
+.metrics-table tbody tr:last-child>*{border-bottom:0}
+.metrics-platform-notes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.metrics-platform-notes article{min-width:0;padding:17px;border:1px solid #c9dfed;border-radius:9px;background:#f7fbfe}
+.metrics-platform-notes h4{font-size:14px;line-height:1.7;color:#15547e;margin:0 0 8px}
+.metrics-platform-notes p,.metrics-description,.metrics-callout,.metrics-report-rules{font-size:13px;line-height:1.95;color:#476477;margin:0}
+.metrics-platform-notes a{display:inline-block;font-size:12px;line-height:1.8;color:#176297;margin:10px 14px 0 0;text-decoration:underline;text-underline-offset:3px}
+.metrics-description{margin-bottom:14px}
+.metrics-lead-table{min-width:560px;table-layout:auto}
+.metrics-lead-table th:first-child{width:70px}
+.metrics-callout{margin-top:14px;border-left:3px solid #3283bd;border-radius:0 7px 7px 0;background:#eaf4fb;padding:12px 15px}
+.metrics-report-rules{padding-left:20px}
+.metrics-report-rules li+li{margin-top:7px}
+@media(max-width:800px){.metrics-platform-notes{grid-template-columns:1fr}.metrics-section+.metrics-section{margin-top:24px}.metrics-table th,.metrics-table td{padding:12px}.metrics-platform-notes article{padding:15px}}
 </style></head><body><header><div class="brand"><span class="logo">m.</span><div><h1>Maeve</h1><small>口袋工作台 · 只读版</small></div></div><button id="install" hidden>安装到手机</button></header><main><div class="step1"><a href="./classroom.html"><strong>第 1 步 · 先看物联网漫画课堂 ↗</strong><span>通过生活场景理解「传感器采集 → 设备处理 → 通信传输 → 平台应用」，认识安信可的上下游关系。</span></a></div><div class="intro"><div><h2 id="title">产品资料</h2><p id="subtitle">按产品系列，随时查找。</p></div><span class="count" id="count"></span></div><div class="toolbar"><input id="search" type="search" placeholder="搜索名称或系列" aria-label="搜索名称或系列"><select id="filter" aria-label="分类"><option>全部</option></select></div><div id="error" role="alert" hidden></div><div id="content"><p class="empty">正在读取资料…</p></div><div class="statusbar"><span id="updated"></span><button id="refresh">检查更新</button></div><details class="help" id="changelog"><summary>更新日志</summary><div id="cl-body">加载中…</div></details><details class="help"><summary>安装与更新说明</summary>在安卓 Chrome 中打开本站，点击“安装到手机”；如果未显示按钮，可从浏览器菜单选择“添加到主屏幕”或“安装应用”。<br>这里显示的是已发布快照。本机工作台修改后，需要重新导出并上传，手机才会获取新内容。断网时可查看上次缓存；打开外部链接需要网络。<br>这是公开查看版，不包含内部备注、草稿或登录参数。点击次数仅保存在当前浏览器，不会公开上传。</details></main><nav aria-label="栏目"><button data-tab="terms" class="active">IoT 术语</button><button data-tab="products">产品资料</button><button data-tab="skills">AI 知识库</button><button data-tab="websites">网站入口</button><details class="pocket-usage" id="pocket-usage"><summary aria-label="查看当前浏览器的每月点击记录"><span>本月点击</span><b id="pocket-usage-count" aria-live="polite">—</b><span>次</span><span class="pu-arrow" aria-hidden="true">▴</span></summary><section class="pu-panel" aria-label="个人使用统计"><h2>点击记录</h2><p class="pu-scope">当前浏览器 · 北京时间</p><time class="pu-month" id="pocket-usage-month"></time><p class="pu-today" id="pocket-usage-today"></p><table aria-label="月度点击次数与天数"><tbody id="pocket-usage-history"></tbody></table><p id="pocket-usage-since"></p><p>网站内每点击一次计 1 次，包括按钮、链接和空白处。打开、刷新、滚动和自动更新不计数。旧版使用次数另行保留，无法换算为点击数。</p><p>记录保存在当前浏览器，关闭后仍保留；不同设备分别计数，清理网站数据会清空记录。</p><p class="pu-error" id="pocket-usage-error" role="status" hidden>当前浏览器暂时无法保存点击记录。</p></section></details></nav><div id="toast" role="status" hidden></div><div id="skill-modal" class="modal" hidden><div class="modal-box"><div class="m-head"><b id="m-name"></b><button class="m-close" data-close>×</button></div><div class="m-block"><h4>WorkBuddy 用户</h4><p>1. 打开 <a href="https://github.com/maevehuang10/maeve-skills" target="_blank" rel="noopener">maeve-skills 仓库</a>，点 Code → Download ZIP 下载<br>2. 解压后把 <code id="m-wb-path"></code> 文件夹放进 <code>~/.workbuddy/skills/</code> 目录<br>3. 重启 WorkBuddy 即可使用</p></div><div class="m-block"><h4>Codex 用户</h4><p>在终端运行下面这条命令：</p><code class="m-cmd" id="m-cmd"></code><button class="m-copy" data-copy>复制命令</button></div></div></div><script>
 (()=>{
  'use strict';
@@ -155,7 +188,65 @@ const $=s=>document.querySelector(s),esc=s=>String(s??'').replace(/[&<>"']/g,c=>
 let data,tab='terms',installPrompt,timer,cached=false;
 const labels={terms:['IoT 术语学习','定义、应用例子与易混点。'],products:['产品资料','按产品系列，随时查找。'],skills:['AI 知识库','Skill 提示词 + AI 工具使用教程 + 运营方法。'],topics:['已发布内容','已有公开链接的内容记录。'],websites:['网站入口','常用平台与工具。']};
 function toast(s){$('#toast').textContent=s;$('#toast').hidden=false;clearTimeout(timer);timer=setTimeout(()=>$('#toast').hidden=true,4000);}
-const operationMethodOpen=new Set(['method-content-creation','method-publication-checklist','method-content-sources','operations-collection','method-dimension-check']);
+const operationMethodOpen=new Set(['method-content-creation','method-publication-checklist','method-content-sources','operations-collection','method-dimension-check','method-social-metrics']);
+function socialMetricsMethod(open,filtered,query){
+  const body=`
+    <p class="operation-intro">对照 LinkedIn、Facebook、TikTok、YouTube 的后台字段，分清展示次数、覆盖人数、播放次数、互动行为、观看深度和真实业务需求。以下以自然内容为主，广告指标单独注明。</p>
+    <p class="metrics-updated">口径核对：2026 年 11 月 9 日 · 后台版本可能不同，记录时保留原始字段名。</p>
+    <section class="metrics-section" aria-labelledby="metrics-platforms-title">
+      <h3 id="metrics-platforms-title">四个平台，分别看什么</h3>
+      <p class="metrics-scroll-hint">表格可左右滑动，查看四个平台的对应字段。</p>
+      <div class="metrics-table-wrap" tabindex="0" role="region" aria-label="四平台指标对照，可左右滚动">
+        <table class="metrics-table">
+          <caption>曝光、触达、播放、互动与观看留存的字段对照</caption>
+          <thead><tr><th scope="col">指标</th><th scope="col">LinkedIn</th><th scope="col">Facebook</th><th scope="col">TikTok</th><th scope="col">YouTube</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">曝光<br><small>展示了几次</small></th><td>Impressions：帖子展示次数，同一人重复看到可产生多次曝光。</td><td>历史报表常见 Impressions；新版常见 Views，包含内容显示或播放。</td><td>广告有 Impressions；自然视频若没有曝光字段，记“未提供”，不用播放量替代。</td><td>Impressions 主要指符合条件的缩略图展示；Shorts 的 Shown in feed 指在短视频流中展示的次数。</td></tr>
+            <tr><th scope="row">触达<br><small>覆盖了多少人</small></th><td>Members reached：看到帖子的去重会员及主页数量，为估算值。</td><td>Reach 或后台提供的独立观众字段：覆盖的去重人数；保留实际字段名。</td><td>Reach、Unique viewers / Total viewers 等，按界面区分触达与去重观看人数。</td><td>Unique reach 为估算覆盖人数；Unique viewers 为估算独立观看人数，两者范围有区别。</td></tr>
+            <tr><th scope="row">播放<br><small>被观看了几次</small></th><td>Video views：达到视频观看门槛的次数；公司主页说明为观看超过 2 秒。</td><td>视频 / Reels 的 Views；“3 秒视频播放”是另一项指标，需要单独记录。</td><td>Video views / Post views：视频观看次数，属于次数，不是去重人数。</td><td>Views：观看次数；Engaged views：度过开头几秒后继续观看的次数，不含循环播放。</td></tr>
+            <tr><th scope="row">互动<br><small>用户做了什么</small></th><td>公司主页 Engagements 包含点击、反应、评论、转发；只统计社交互动时需另行注明。</td><td>常看反应、评论、分享；点击建议另列，互动合计以后台实际包含的行为为准。</td><td>Likes、Comments、Shares；Favorites / Saves 收藏可另列。</td><td>点赞、评论、分享；新增订阅建议另列。Engaged views 不是点赞评论数。</td></tr>
+            <tr><th scope="row">观看留存<br><small>看了多久、在哪离开</small></th><td>Watch time、Average watch time：观看总时长、平均观看时长等。</td><td>观看时长、平均观看时长、Audience retention 留存曲线。</td><td>Average watch time、Watched full video / Video completion rate、留存曲线。</td><td>平均观看时长、平均观看百分比、Audience retention；Shorts 另看 Stayed to watch 继续观看比例。</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section class="metrics-section" aria-labelledby="metrics-differences-title">
+      <h3 id="metrics-differences-title">四个容易看错的口径</h3>
+      <div class="metrics-platform-notes">
+        <article><h4>LinkedIn · 互动包含点击</h4><p>公司主页 Video views 为观看超过 2 秒；个人帖子说明为连续观看至少 2 秒。公司主页互动率包含点击，不能只用点赞、评论、转发计算后当作后台互动率。</p><a href="https://www.linkedin.com/help/linkedin/answer/a569074" target="_blank" rel="noopener noreferrer">公司主页指标 ↗</a><a href="https://www.linkedin.com/help/lms/answer/a516971/linkedin-post-video-and-published-article-analytics-overview?lang=en" target="_blank" rel="noopener noreferrer">个人帖子指标 ↗</a></article>
+        <article><h4>Facebook · Views 不一定是视频播放</h4><p>Views 可以包含图片、文字的显示次数。看到“10 万 Views”，先核对内容形式；视频 / Reels 的播放与 3 秒视频播放分别保留。留存曲线用于判断观众何时离开。</p><a href="https://www.facebook.com/business/help/4185855074991336" target="_blank" rel="noopener noreferrer">Views 官方说明 ↗</a><a href="https://about.fb.com/news/2023/11/helping-creators-test-content-and-earn-rewards/" target="_blank" rel="noopener noreferrer">留存图说明 ↗</a></article>
+        <article><h4>TikTok · 自然视频与广告分开</h4><p>自然视频主要看播放和观看质量；广告里的 2 秒、6 秒播放是单独指标。TikTok One 报告区分独立观众、平均观看时长和完整观看率，普通账号以实际界面为准。</p><a href="https://newsroom.tiktok.com/product-tutorial-tiktok-analytics?lang=en" target="_blank" rel="noopener noreferrer">自然视频分析 ↗</a><a href="https://ads.tiktok.com/resources/help/article/about-tiktok-one-campaign-reporting?lang=en" target="_blank" rel="noopener noreferrer">TikTok One 指标 ↗</a></article>
+        <article><h4>YouTube · 播放、继续观看与完播不同</h4><p>自 2026 年 8 月 24 日起，所有视频格式的 Views 按开始播放计数。Engaged views 衡量持续观看；Shorts 的“继续观看比例”不是完播率，缩略图展示也不等于所有位置的全部曝光。</p><a href="https://support.google.com/youtube/answer/12220281?hl=zh-Hans" target="_blank" rel="noopener noreferrer">播放与观看指标 ↗</a><a href="https://support.google.com/youtube/answer/9314486?hl=en" target="_blank" rel="noopener noreferrer">缩略图展示 ↗</a><a href="https://support.google.com/youtube/answer/12942217?co=YOUTUBE._YTVideoType%3Dshorts&hl=en-GB" target="_blank" rel="noopener noreferrer">Shorts 指标 ↗</a></article>
+      </div>
+    </section>
+    <section class="metrics-section" aria-labelledby="metrics-leads-title">
+      <h3 id="metrics-leads-title">有效询盘：四个平台统一按 A / B / C 判断</h3>
+      <p class="metrics-description">有效询盘按业务需求人工判断：有明确产品、项目或应用需求，能够继续核实或跟进。评论、私信、表单和可归因的邮件是线索入口，不自动计为有效询盘。</p>
+      <div class="metrics-table-wrap" tabindex="0" role="region" aria-label="有效询盘分级标准，可左右滚动">
+        <table class="metrics-table metrics-lead-table">
+          <caption>有效询盘与待确认线索的分级标准</caption>
+          <thead><tr><th scope="col">等级</th><th scope="col">判断标准</th><th scope="col">是否计入有效询盘 / 线索</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">A</th><td>明确项目、型号、数量、报价、样品、采购或定制需求。</td><td>计入，与 B 级分列。</td></tr>
+            <tr><th scope="row">B</th><td>有明确应用场景或具体技术需求，采购信息尚未确认，可以继续跟进。</td><td>计入，与 A 级分列。</td></tr>
+            <tr><th scope="row">C</th><td>仅索取资料、留言关键词或一般咨询，尚未确认实际需求。</td><td>暂不计入，单列为待确认。</td></tr>
+            <tr><th scope="row">无效</th><td>广告、无关留言、重复记录或无法继续联系。</td><td>不计入。</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="metrics-callout">有效询盘 / 线索 = 去重后的 A + B。同一客户、同一项目跨平台重复咨询只计一次，保留各平台来源与原始咨询依据。</p>
+    </section>
+    <section class="metrics-section" aria-labelledby="metrics-report-title">
+      <h3 id="metrics-report-title">月报记录与汇总</h3>
+      <ul class="metrics-report-rules">
+        <li>每条数据保留：平台、原始指标名、数值、自然 / 付费、统计周期、读取时间、原帖链接。</li>
+        <li>曝光、触达、播放分别统计，不相加后统一叫“总曝光”；各条帖子或各平台触达相加，也不代表去重总人数。</li>
+        <li>互动合计注明包含哪些行为；平均观看比例、完播率、继续观看比例分别记录，不直接互换或跨平台比较。</li>
+      </ul>
+    </section>`;
+  if(query&&!('运营方法专区 四平台指标与有效询盘口径 '+body).toLowerCase().includes(query))return '';
+  return '<details class="operation-method social-metrics" id="social-metrics-method" data-skill-fold="method-social-metrics" data-search-open="'+filtered+'" '+(open||filtered?'open':'')+'><summary><span class="operation-method-label">方法 05</span><strong>四平台指标与有效询盘口径</strong><small>曝光 / 触达 / 播放 / 互动 / 观看留存 / 有效询盘</small></summary><div class="operation-method-body">'+body+'</div></details>';
+}
 function operationMethods(){
   const category=$('#filter').value,search=$('#search').value;
   if(category!=='全部'&&category!=='运营方法')return '';
@@ -189,8 +280,9 @@ function operationMethods(){
   ];
   const dimensionsMatch=!query||['运营方法专区','不确定问题的查证方法','不明白','不知道',...dimensionSteps.flat()].join(' ').toLowerCase().includes(query);
   const dimensions=dimensionsMatch?'<details class="operation-method dimension-check" data-skill-fold="method-dimension-check" data-search-open="'+filtered+'" '+(filtered||operationMethodOpen.has('method-dimension-check')?'open':'')+'><summary><span class="operation-method-label">方法 04</span><strong>不确定问题的查证方法</strong><small>先 Google 查资料 → 再问 ChatGPT → 多方核对</small></summary><div class="operation-method-body"><p class="operation-intro">遇到不明白、不知道或不确定的事情，先去 Google 查资料，再用 ChatGPT 帮助理解和核对；不要单独信赖 WorkBuddy 的答案。</p><ol class="operation-steps">'+dimensionSteps.map(([title,description],i)=>'<li><span class="operation-step-number" aria-hidden="true">0'+(i+1)+'</span><div><h3>'+title+'</h3><p>'+description+'</p></div></li>').join('')+'</ol></div></details>':'';
-  if(!creation&&!checklist&&!sourceSection&&!dimensions)return '';
-  return '<details class="operations-methods" data-skill-fold="operations-collection" data-search-open="'+filtered+'" aria-labelledby="operations-title" '+(filtered||operationMethodOpen.has('operations-collection')?'open':'')+'><summary class="section-heading"><h2 id="operations-title">运营方法专区 <span class="number">'+(Number(!!creation)+Number(!!checklist)+Number(!!sourceSection)+Number(!!dimensions))+' 篇</span></h2></summary><div class="operations-methods-body">'+creation+checklist+sourceSection+dimensions+'</div></details>';
+  const metrics=socialMetricsMethod(operationMethodOpen.has('method-social-metrics'),filtered,query);
+  if(!creation&&!checklist&&!sourceSection&&!dimensions&&!metrics)return '';
+  return '<details class="operations-methods" data-skill-fold="operations-collection" data-search-open="'+filtered+'" aria-labelledby="operations-title" '+(filtered||operationMethodOpen.has('operations-collection')?'open':'')+'><summary class="section-heading"><h2 id="operations-title">运营方法专区 <span class="number">'+(Number(!!creation)+Number(!!checklist)+Number(!!sourceSection)+Number(!!dimensions)+Number(!!metrics))+' 篇</span></h2></summary><div class="operations-methods-body">'+creation+checklist+sourceSection+dimensions+metrics+'</div></details>';
 }
 
 document.addEventListener('click',e=>{const summary=e.target.closest('.operations-methods>summary, .operations-methods .operation-method>summary');if(!summary||summary.parentElement.dataset.searchOpen==='true')return;const key=summary.parentElement.dataset.skillFold;if(summary.parentElement.open)operationMethodOpen.delete(key);else operationMethodOpen.add(key);});
