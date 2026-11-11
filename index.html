@@ -41,6 +41,7 @@ nav .pocket-usage{position:relative;align-self:center;margin-left:12px;min-width
 .publication-checklist .checklist-progress::-moz-progress-bar{background:#1876b3}
 .publication-checklist .button{background:#e7f3fb;border-color:#b9d8eb;color:#15557f}
 .publication-checklist .text-button{color:#17649d}
+.publication-checklist .checklist-groups fieldset:nth-last-child(2){grid-column:1 / -1}.publication-checklist .exhibition-guidance p{margin:8px 10px;font-size:13px;line-height:1.8;color:#304b5b}
 /* 四平台指标：以蓝色标识，表格在窄屏中横向滚动。 */
 .social-metrics{border-color:#86b9df}
 .social-metrics>summary{background:#176297;color:#fff}
@@ -84,7 +85,7 @@ nav .pocket-usage{position:relative;align-self:center;margin-left:12px;min-width
    ['copy-singular-plural','英文文案检查基本的单复数用法'],
    ['paragraph-spacing','段落不过长，空格和空行已处理'],
    ['comment-spacing','评论区文案的空行已处理'],
-   ['hashtag-count','Tag 为 3–5 个，使用流量较大的词语，不包括产品词'],
+   ['hashtag-count','Tag 为 3–5 个，使用流量较大的词语，不包括产品词；每个 Tag 之间空一格'],
    ['copy-no-asterisks','文案不含 * 或 ** 等 Markdown 格式标记'],
    ['copy-no-chinese','英文文案不含中文字符及中文标点（如‘，。、？）']
   ]],
@@ -177,7 +178,7 @@ nav .pocket-usage{position:relative;align-self:center;margin-left:12px;min-width
     <div class="operation-method-body"><div class="checklist-toolbar"><div><strong data-checklist-count>已勾选 ${draft.size} / ${total} 项</strong><small data-checklist-round>第 ${saved?.round||1} 次检查</small></div><button class="button soft" type="button" data-checklist-reset disabled>开始下一次检查</button></div>
     <progress class="checklist-progress" max="${total}" value="${draft.size}" aria-label="本次检查进度"></progress><p class="checklist-status"><span data-checklist-status role="status" aria-live="polite">正在读取…</span><button class="text-button" type="button" data-checklist-retry hidden>重新读取</button></p>
     <p class="checklist-note">LK、FB 海报按本工作台的 4:5 制作标准检查。进度保存在当前浏览器；开始下一次检查会清空本次勾选。</p>
-    <div class="checklist-groups">${groups.map(([title,items])=>`<fieldset><legend>${title}</legend>${items.map(([id,label])=>`<label class="checklist-item${draft.has(id)?' is-checked':''}"><input type="checkbox" data-checklist-id="${id}" ${draft.has(id)?'checked':''} ${!saved?'disabled':''}><span>${label}</span></label>`).join('')}</fieldset>`).join('')}</div></div></details>`;
+    <div class="checklist-groups">${groups.map(([title,items])=>`<fieldset><legend>${title}</legend>${items.map(([id,label])=>`<label class="checklist-item${draft.has(id)?' is-checked':''}"><input type="checkbox" data-checklist-id="${id}" ${draft.has(id)?'checked':''} ${!saved?'disabled':''}><span>${label}</span></label>`).join('')}</fieldset>`).join('')}<fieldset class="exhibition-guidance"><legend>展会宣传（适用时参考）</legend><p>图片：使用展会现场图，不需要用 AI 制作海报；适当调整清晰度，图片张数按内容需要决定。</p><p>视频：可将图片转成视频，搭配与画面节奏相符的背景音乐；也可结合不同的现场视频素材和图片，让内容更加丰富。</p></fieldset></div></div></details>`;
   }
  };
 })();
